@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\perf\opencl\perf_cascades.cpp">
+      <Filter>opencv_objdetect\Src\opencl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\perf\opencl\perf_hogdetect.cpp">
+      <Filter>opencv_objdetect\Src\opencl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\perf\perf_main.cpp">
+      <Filter>opencv_objdetect\Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\perf\perf_precomp.hpp">
+      <Filter>opencv_objdetect\Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\world\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="opencv_objdetect\Src">
+      <UniqueIdentifier>{63C7EB66-83BF-3D2D-92C8-99A1CCD4A0B4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_objdetect\Include">
+      <UniqueIdentifier>{E59AABDE-F026-3281-8097-66F168196BEE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_objdetect">
+      <UniqueIdentifier>{7F6A1A94-30FF-3315-9106-5DB9580CAE52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_objdetect\Src\opencl">
+      <UniqueIdentifier>{C238818D-2DE3-38B8-A624-3E4664756E3A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

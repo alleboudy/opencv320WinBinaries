@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\perf\cuda\perf_gpumat.cpp">
+      <Filter>opencv_core\Src\cuda</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\perf\opencl\perf_arithm.cpp">
+      <Filter>opencv_core\Src\opencl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\perf\opencl\perf_bufferpool.cpp">
+      <Filter>opencv_core\Src\opencl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\perf\opencl\perf_channels.cpp">
+      <Filter>opencv_core\Src\opencl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\perf\opencl\perf_dxt.cpp">
+      <Filter>opencv_core\Src\opencl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\perf\opencl\perf_gemm.cpp">
+      <Filter>opencv_core\Src\opencl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\perf\opencl\perf_matop.cpp">
+      <Filter>opencv_core\Src\opencl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\perf\opencl\perf_usage_flags.cpp">
+      <Filter>opencv_core\Src\opencl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\perf\perf_abs.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\perf\perf_addWeighted.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\perf\perf_arithm.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\perf\perf_bitwise.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\perf\perf_compare.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\perf\perf_convertTo.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\perf\perf_cvround.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\perf\perf_dft.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\perf\perf_dot.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\perf\perf_inRange.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\perf\perf_io_base64.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\perf\perf_main.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\perf\perf_mat.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\perf\perf_math.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\perf\perf_merge.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\perf\perf_minmaxloc.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\perf\perf_norm.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\perf\perf_reduce.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\perf\perf_sort.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\perf\perf_split.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\perf\perf_stat.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\perf\perf_umat.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\perf\perf_precomp.hpp">
+      <Filter>opencv_core\Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\world\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="opencv_core\Src">
+      <UniqueIdentifier>{12741050-F5E9-3B2B-AD61-03C91E82A3F3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_core\Include">
+      <UniqueIdentifier>{49177637-D730-3749-BBFA-1E7A16A2C003}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_core">
+      <UniqueIdentifier>{78AFBB88-B5D1-376A-B2DB-337EBB346F9C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_core\Src\opencl">
+      <UniqueIdentifier>{B0D5D9C0-0999-398B-9FBF-CAC1BB536F39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_core\Src\cuda">
+      <UniqueIdentifier>{DA104F12-C13A-3B36-A25F-B13BAD8022DC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

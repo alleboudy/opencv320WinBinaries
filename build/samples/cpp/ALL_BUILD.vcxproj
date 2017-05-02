@@ -1,0 +1,545 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{33D9E9F7-05F0-3905-91A1-325BB3E5459D}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\aalleboudy\Downloads\opencv\sources\modules\videostab\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\stitching\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\superres\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\highgui\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\videoio\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\video\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\ml\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\world\include;C:\Users\aalleboudy\Downloads\opencv\sources\include;C:\Users\aalleboudy\Downloads\opencv\build\3rdparty\ippicv\ippicv_win\include;C:\Users\aalleboudy\Downloads\opencv\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\aalleboudy\Downloads\opencv\sources\modules\videostab\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\stitching\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\superres\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\highgui\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\videoio\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\video\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\ml\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\world\include;C:\Users\aalleboudy\Downloads\opencv\sources\include;C:\Users\aalleboudy\Downloads\opencv\build\3rdparty\ippicv\ippicv_win\include;C:\Users\aalleboudy\Downloads\opencv\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\aalleboudy\Downloads\opencv\sources\samples\cpp\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/aalleboudy/Downloads/opencv/sources/samples/cpp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/aalleboudy/Downloads/opencv/sources -BC:/Users/aalleboudy/Downloads/opencv/build --check-stamp-file C:\Users\aalleboudy\Downloads\opencv\build\samples\cpp\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/aalleboudy/Downloads/opencv/sources/samples/cpp/CMakeLists.txt;C:\Users\aalleboudy\Downloads\opencv\sources\samples\cpp\CMakeLists.txt;C:\Users\aalleboudy\Downloads\opencv\sources\samples\cpp\tutorial_code\calib3d\real_time_pose_estimation\CMakeLists.txt;C:\Users\aalleboudy\Downloads\opencv\sources\samples\cpp\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\aalleboudy\Downloads\opencv\build\samples\cpp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/aalleboudy/Downloads/opencv/sources/samples/cpp/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/aalleboudy/Downloads/opencv/sources -BC:/Users/aalleboudy/Downloads/opencv/build --check-stamp-file C:\Users\aalleboudy\Downloads\opencv\build\samples\cpp\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/aalleboudy/Downloads/opencv/sources/samples/cpp/CMakeLists.txt;C:\Users\aalleboudy\Downloads\opencv\sources\samples\cpp\CMakeLists.txt;C:\Users\aalleboudy\Downloads\opencv\sources\samples\cpp\tutorial_code\calib3d\real_time_pose_estimation\CMakeLists.txt;C:\Users\aalleboudy\Downloads\opencv\sources\samples\cpp\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\aalleboudy\Downloads\opencv\build\samples\cpp\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/ZERO_CHECK.vcxproj">
+      <Project>9723EDC2-C47D-3A79-B4B7-97DCD40CCCEC</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/cpp-tutorial-pnp_detection.vcxproj">
+      <Project>387B24AE-0F84-32D0-BC52-E2717B5ECAB8</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/cpp-tutorial-pnp_registration.vcxproj">
+      <Project>9F8D1B74-0F48-3CA0-8170-53219111BED3</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_3calibration.vcxproj">
+      <Project>736046D2-59EE-3801-B3CF-AD5CA6699FE1</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_autofocus.vcxproj">
+      <Project>E2521E4A-1A8B-34E6-9F63-6D446A472125</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_bgfg_segm.vcxproj">
+      <Project>0A885A4A-1E73-3034-A385-8181FD35A983</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_calibration.vcxproj">
+      <Project>33518481-F64F-361F-97A8-D6D54C450173</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_camshiftdemo.vcxproj">
+      <Project>D5E490DB-E3F4-3483-93AC-EAC0CA9F610D</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_cloning_demo.vcxproj">
+      <Project>247D5912-2029-3172-B243-92733144F45B</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_cloning_gui.vcxproj">
+      <Project>AB05C09C-8834-3BB9-B2BB-AB643045A3D0</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_connected_components.vcxproj">
+      <Project>0295313D-577D-3B68-A744-E1FC056EF422</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_contours2.vcxproj">
+      <Project>3A95DBFA-09A5-326A-A724-5EDEE1772332</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_convexhull.vcxproj">
+      <Project>91A64AB0-43F1-3FDA-8CD0-965B57269222</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_cout_mat.vcxproj">
+      <Project>F5A17617-08BD-329D-AEF5-3BD7D26EE02C</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_create_mask.vcxproj">
+      <Project>FBC58817-FA62-3368-944A-D40BECA5A3B6</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_dbt_face_detection.vcxproj">
+      <Project>B182E2A2-67B9-37E0-AE26-04F500202142</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_delaunay2.vcxproj">
+      <Project>6F949724-E985-32A5-B234-356BE1B8D3BE</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_demhist.vcxproj">
+      <Project>B897E8CF-1838-3E9A-ADBF-C05F1A500408</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_detect_blob.vcxproj">
+      <Project>80C9E0EC-00D1-31D2-9C34-29F8C8E8B3EC</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_detect_mser.vcxproj">
+      <Project>1D0E0BEC-CDEE-3B20-81AF-1773886CC2D2</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_dft.vcxproj">
+      <Project>D9A0E967-243D-3D6B-AF3F-BB42E6D2A7B0</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_distrans.vcxproj">
+      <Project>C753FFF7-5F69-3E05-9353-EABF8C07AA7B</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_drawing.vcxproj">
+      <Project>92A532A0-B507-3DDB-9FF9-D1B987931A0F</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_edge.vcxproj">
+      <Project>E18D6E47-0B75-35EE-BE34-C4CD51D39CD9</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_em.vcxproj">
+      <Project>8A0EC068-B257-34FD-B9D0-453FAA72CE73</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_example.vcxproj">
+      <Project>4679FD37-4075-3638-A477-51A232AE15B5</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_facedetect.vcxproj">
+      <Project>0D225058-B6A7-34D5-9A0D-E62CFE624388</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_facial_features.vcxproj">
+      <Project>CCEE4FA0-3C25-3A2F-BFD0-6AAE822197B0</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_fback.vcxproj">
+      <Project>30E99276-B394-3F5D-976A-D66E9DF46396</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_ffilldemo.vcxproj">
+      <Project>ED7D8635-082E-3D59-9D5B-747DA14765B2</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_filestorage.vcxproj">
+      <Project>98974B1F-54DD-315C-A670-2E14B77EAD79</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_filestorage_base64.vcxproj">
+      <Project>D406EDE9-ACCD-3645-9913-8ADC0E4BFA16</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_fitellipse.vcxproj">
+      <Project>E36BD387-0979-30C4-90BF-F701D8A278A1</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_grabcut.vcxproj">
+      <Project>ECBF2ABB-DE4E-39B8-B500-1B1720119C9B</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_houghcircles.vcxproj">
+      <Project>7030BC9D-7332-3C66-A583-8542E144D955</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_houghlines.vcxproj">
+      <Project>17C554C5-0EE6-3319-A635-4087B01569C9</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_image.vcxproj">
+      <Project>69043039-F346-3F50-B3E2-10E46E06354E</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_image_alignment.vcxproj">
+      <Project>EF6E1558-4140-32D8-A120-D6A86DAEB45C</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_image_sequence.vcxproj">
+      <Project>1A3DA29B-CC1C-3C4C-ABBA-78CDB00BCDDF</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_imagelist_creator.vcxproj">
+      <Project>BA0C89E1-9793-392D-B8AE-1A1085B90F41</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_inpaint.vcxproj">
+      <Project>0F5F4799-8FBC-3EBD-9BD9-5178FCFADA7A</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_intelperc_capture.vcxproj">
+      <Project>E820B9F5-E60C-3034-88F8-DD4750E7DC34</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_kalman.vcxproj">
+      <Project>8CCB97DC-96F7-3B58-9F82-6CF89F162EB7</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_kmeans.vcxproj">
+      <Project>8D36739B-741B-3164-92AC-3B127323CCA6</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_laplace.vcxproj">
+      <Project>8625B499-0860-37B4-ABAE-86306DEEE35C</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_letter_recog.vcxproj">
+      <Project>FB25FA27-8F21-372E-B648-3BEE5779A584</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_lkdemo.vcxproj">
+      <Project>26D8565C-A458-361C-8A0C-9566DA372A86</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_logistic_regression.vcxproj">
+      <Project>DF78AF6C-568A-30BB-9661-4A85344CA26F</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_lsd_lines.vcxproj">
+      <Project>662BC2AD-B67B-3B84-A7B6-ADB61A7B1A5B</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_mask_tmpl.vcxproj">
+      <Project>627C01EE-834C-319C-A980-8E7AD2827F61</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_matchmethod_orb_akaze_brisk.vcxproj">
+      <Project>732DF957-2D1A-3E61-ACA8-5CCEC50878B2</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_minarea.vcxproj">
+      <Project>DE372BD6-8464-345A-8D4B-96709330EEFF</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_morphology2.vcxproj">
+      <Project>1C18A9B9-517C-360A-9089-E8D6C115494F</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_neural_network.vcxproj">
+      <Project>A80267BA-632A-3C6D-A3FE-99E0F5174B85</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_npr_demo.vcxproj">
+      <Project>339EDD8C-5C91-3BD9-A586-F0A292E02B86</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_opencv_version.vcxproj">
+      <Project>0716A76B-C8BF-3E67-A618-E10A0D3FD29A</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_openni_capture.vcxproj">
+      <Project>CB518CA1-E4FD-372E-ADB0-82C24EAD22AA</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_pca.vcxproj">
+      <Project>38C3C1ED-AD4C-307C-BB9F-8D03C02CD58D</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_peopledetect.vcxproj">
+      <Project>4E5B4405-E4EA-369A-8D7B-064122C70CF6</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_phase_corr.vcxproj">
+      <Project>5257B724-B3C5-3F9E-B937-976FDFA01F47</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_points_classifier.vcxproj">
+      <Project>3003B8BF-8A6F-3B22-80F4-DB0CF238306C</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_polar_transforms.vcxproj">
+      <Project>B5D3B4CE-73F1-3977-A56D-06B56292AC09</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_segment_objects.vcxproj">
+      <Project>38851F08-400B-3DEA-8845-1920FB66F813</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_select3dobj.vcxproj">
+      <Project>BACFC244-1AC4-369D-9832-DA3547144D82</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_shape_example.vcxproj">
+      <Project>9EB86649-1F51-3DDE-BC31-1B87F2EFF263</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_smiledetect.vcxproj">
+      <Project>2C8D3CA4-C924-342F-8AD3-476032A128F9</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_squares.vcxproj">
+      <Project>4BDC845B-2A60-37E6-BABA-48F139FCBDAC</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_starter_imagelist.vcxproj">
+      <Project>D005A71E-4D93-37C9-BA2D-57FDD7DEECB0</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_stereo_calib.vcxproj">
+      <Project>D431CDE1-15E8-3EED-A6BA-9C3843B18C92</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_stereo_match.vcxproj">
+      <Project>506BF67D-CD2D-31EF-AE26-BF4A4920EE43</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_stitching.vcxproj">
+      <Project>F560FEB7-FC78-3E74-9143-4DB018C922B5</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_stitching_detailed.vcxproj">
+      <Project>09DF6BE7-C12F-30AA-BD84-ADB468581637</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_train_HOG.vcxproj">
+      <Project>DFC9AE32-4FAE-3EC2-827A-5092D93B7CD0</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_train_svmsgd.vcxproj">
+      <Project>951D2F2A-85F2-33B9-A4DE-E44486E59191</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_tree_engine.vcxproj">
+      <Project>1C2FB22D-2B3D-3609-9EA2-FBDA9C2CFBBC</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_tvl1_optical_flow.vcxproj">
+      <Project>EA855727-9B3E-320F-990D-5CCACB1890A4</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_videocapture_basic.vcxproj">
+      <Project>5B0DC265-CEBC-3343-9921-17C797180838</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_videocapture_starter.vcxproj">
+      <Project>6F6AFF4C-9DB0-3603-AC37-4461F1A8E27B</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_videostab.vcxproj">
+      <Project>9C973FF1-D634-3953-B3D7-58609417376C</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_videowriter_basic.vcxproj">
+      <Project>6FC98E93-ECC2-3A92-8788-602E2B286175</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/example_watershed.vcxproj">
+      <Project>8AAA74B6-C334-3502-9D2E-A4E1EB64A8C2</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_AKAZE_match.vcxproj">
+      <Project>4A586801-DE45-3DDD-88E9-81B54BB3AC38</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_AddingImages.vcxproj">
+      <Project>C21A5B6C-6C33-3448-AF8A-59CD2D68A249</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_AddingImagesTrackbar.vcxproj">
+      <Project>2847CFC2-F2EE-326F-9A22-78B47C26E324</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_BasicLinearTransforms.vcxproj">
+      <Project>1646EB3F-20A7-35F4-810A-315A9F28A129</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_BasicLinearTransformsTrackbar.vcxproj">
+      <Project>4F0C19A2-01F4-3BCA-837E-CB491F74D81A</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_CannyDetector_Demo.vcxproj">
+      <Project>B350110A-5332-3E2E-A8C5-84474D650C53</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_Drawing_1.vcxproj">
+      <Project>06105EAE-895A-3616-8FCA-0F63E9EC1355</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_Drawing_2.vcxproj">
+      <Project>2E098107-2DA0-33C7-BA67-1E6A8DB6E41E</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_EqualizeHist_Demo.vcxproj">
+      <Project>8431264F-56AB-3686-9BCF-C262E252FAC7</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_Geometric_Transforms_Demo.vcxproj">
+      <Project>7E35BFF0-9DE7-3D2C-9E7E-041DCAC8C4F0</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_HoughCircle_Demo.vcxproj">
+      <Project>CB7A8E1F-323B-3A58-A3EC-F95D52121158</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_HoughLines_Demo.vcxproj">
+      <Project>4FE67943-CA7E-395A-BE69-1256B54F748C</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_LATCH_match.vcxproj">
+      <Project>1B066F12-CD6A-32CF-BEFC-502500A7AE0F</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_Laplace_Demo.vcxproj">
+      <Project>304FEF69-2AE3-31F2-9A91-B92C8FF9E91C</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_MatchTemplate_Demo.vcxproj">
+      <Project>35D1588A-AF26-3D0C-8F47-4A0D5E57CB01</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_Morphology_1.vcxproj">
+      <Project>BD74BD11-F22A-3341-825E-52F8B3840C73</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_Morphology_2.vcxproj">
+      <Project>9B2C2532-DDE3-3519-B48F-C0ADFC7A0E09</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_Morphology_3.vcxproj">
+      <Project>CF0102B4-7B04-3740-A5B7-DED3D6987FAC</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_Pyramids.vcxproj">
+      <Project>ECABCB2B-B435-3C4D-B73A-C0E14B0D04E2</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_Remap_Demo.vcxproj">
+      <Project>D1E978C0-C3FA-3A9C-8437-F3D509BF50FE</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_SBM_Sample.vcxproj">
+      <Project>914FAB0A-4F1D-3EDA-BB71-FFDDEEB18FDF</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_Smoothing.vcxproj">
+      <Project>B896B5D8-9FE2-353B-963C-680A766063ED</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_Sobel_Demo.vcxproj">
+      <Project>66708228-4A6A-3B73-9FE0-B0AC17F83140</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_Threshold.vcxproj">
+      <Project>D21B9566-2993-3F3A-A624-0F4B9E0673E7</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_Threshold_inRange.vcxproj">
+      <Project>64BA5F27-BF7D-3FF7-B671-F07327976B61</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_bg_sub.vcxproj">
+      <Project>BCABD1BE-B50B-369C-A744-6C7794B4CEB5</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_calcBackProject_Demo1.vcxproj">
+      <Project>17549BC6-3437-3787-AFAE-E2CB4D7D78C4</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_calcBackProject_Demo2.vcxproj">
+      <Project>E15887B9-C469-31A3-8CE6-50D20438A8C7</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_calcHist_Demo.vcxproj">
+      <Project>3790E695-D7E2-3B82-9CEE-42DC16AA91FF</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_camera_calibration.vcxproj">
+      <Project>98BBB2FD-8D47-32A1-9A24-FC9522CD5915</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_cloning_demo.vcxproj">
+      <Project>75082EFA-EFD3-38A5-ABDF-49E24068472C</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_cloning_gui.vcxproj">
+      <Project>18354D44-1223-3235-B99B-33CEC7578557</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_compareHist_Demo.vcxproj">
+      <Project>FFA21008-65D8-3096-A2C7-112AA15F67AD</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_copyMakeBorder_demo.vcxproj">
+      <Project>EB3A8107-2367-36B1-9960-81550D0593F6</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_cornerDetector_Demo.vcxproj">
+      <Project>4FB4C808-7C90-3535-917F-246C17399C86</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_cornerHarris_Demo.vcxproj">
+      <Project>5FDAAC68-5AF6-3E03-BDA3-6779324909B1</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_cornerSubPix_Demo.vcxproj">
+      <Project>01A0E0D1-B92A-32B1-A851-F0108FC72CE4</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_decolor.vcxproj">
+      <Project>BD5FFCF4-587F-378C-85F0-6E816D6859CD</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_discrete_fourier_transform.vcxproj">
+      <Project>9B477070-762D-3654-879E-4250A9E666AE</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_display_image.vcxproj">
+      <Project>BB8BB249-3290-3A31-AF2A-3C4274673325</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_documentation.vcxproj">
+      <Project>D81261C6-1D8E-3153-B50C-04EB593D919A</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_file_input_output.vcxproj">
+      <Project>C24C95FB-B0E4-371C-B112-4266F2D0499A</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_filter2D_demo.vcxproj">
+      <Project>B60D8FD2-7492-36C5-B8EB-854F2A5646E2</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_findContours_demo.vcxproj">
+      <Project>3961E011-9178-36CD-BDCC-F4B83B31E200</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_gdal-image.vcxproj">
+      <Project>D6772FE9-4F0B-3FAF-A165-66130DD92B54</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_generalContours_demo1.vcxproj">
+      <Project>ADB298CC-5C52-340E-9BBB-5438B8B2955B</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_generalContours_demo2.vcxproj">
+      <Project>2283F753-CDA9-39E3-BF34-93F2CDAF5BF3</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_goodFeaturesToTrack_Demo.vcxproj">
+      <Project>2B14B938-25C4-3B01-AB1C-D4D59F10B5A3</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_hdr_imaging.vcxproj">
+      <Project>4FCD8B63-8445-30B9-AA12-FFA8AE59845C</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_how_to_scan_images.vcxproj">
+      <Project>41360B59-3B02-334C-8720-C7538AB092E6</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_hull_demo.vcxproj">
+      <Project>3008CE42-78F5-3E33-B098-03C2E362A11D</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_imageSegmentation.vcxproj">
+      <Project>D2EA10BD-E007-3360-949A-0F1FB4B970E5</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_interoperability_with_OpenCV_1.vcxproj">
+      <Project>0A0A8D5C-9001-3B18-B8B2-3AAFE792480C</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_introduction_to_pca.vcxproj">
+      <Project>1F6CEDC0-716A-3443-BDD5-FA4EC7D66F73</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_introduction_to_svm.vcxproj">
+      <Project>C92EF15C-AB53-360A-BC4F-18E67F42F9BD</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_introduction_windows_vs.vcxproj">
+      <Project>73D53FF7-9E4E-36A1-9B44-83EC10AEFC18</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_mat_mask_operations.vcxproj">
+      <Project>485930BC-29F5-388C-AB06-F88C8616262C</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_mat_the_basic_image_container.vcxproj">
+      <Project>55DE399B-8CA5-3061-AB8A-0BBB2A1EE1EF</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_moments_demo.vcxproj">
+      <Project>943AC25E-6809-3E7E-B559-6764C7E19A92</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_non_linear_svms.vcxproj">
+      <Project>AC7F2E46-0B29-3DA8-ABB4-3CDA3C990E63</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_npr_demo.vcxproj">
+      <Project>49293A85-F12E-36B6-A81F-2FE31F4DB950</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_objectDetection.vcxproj">
+      <Project>53C7AF68-B49D-386F-A182-0221CA10F892</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_objectDetection2.vcxproj">
+      <Project>99B2C7C7-822D-3F2D-A4B4-8953E33CC1FB</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_planar_tracking.vcxproj">
+      <Project>F50A725C-C2D5-3920-B9B2-0E3E2172FC12</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_pointPolygonTest_demo.vcxproj">
+      <Project>A9E79493-DADD-3FBA-83FB-9699FCFB846B</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_video-input-psnr-ssim.vcxproj">
+      <Project>C4FCF334-0D85-3652-81B5-2AAE00F365AE</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/samples/cpp/tutorial_video-write.vcxproj">
+      <Project>76409EB5-543A-3A80-8FAB-0C502C9C22B5</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

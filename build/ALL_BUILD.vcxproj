@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{33D9E9F7-05F0-3905-91A1-325BB3E5459D}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\aalleboudy\Downloads\opencv\build\3rdparty\ippicv\ippicv_win\include;C:\Users\aalleboudy\Downloads\opencv\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\aalleboudy\Downloads\opencv\build\3rdparty\ippicv\ippicv_win\include;C:\Users\aalleboudy\Downloads\opencv\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\aalleboudy\Downloads\opencv\sources\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/aalleboudy/Downloads/opencv/sources/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/aalleboudy/Downloads/opencv/sources -BC:/Users/aalleboudy/Downloads/opencv/build --check-stamp-file C:\Users\aalleboudy\Downloads\opencv\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/aalleboudy/Downloads/opencv/sources/CMakeLists.txt;C:\Users\aalleboudy\Downloads\opencv\sources\CMakeLists.txt;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVMinDepVersions.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVUtils.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Users\aalleboudy\Downloads\opencv\build\CMakeFiles\3.6.3\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\aalleboudy\Downloads\opencv\build\CMakeFiles\3.6.3\CMakeCXXCompiler.cmake;C:\Users\aalleboudy\Downloads\opencv\build\CMakeFiles\3.6.3\CMakeCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC.cmake;C:\Users\aalleboudy\Downloads\opencv\build\CMakeFiles\3.6.3\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVDetectCXXCompiler.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVVersion.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include\opencv2\core\version.hpp;C:\Program Files\CMake\share\cmake-3.6\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVCompilerOptions.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\checks\fp16.cpp;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVCRTLinkage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\ProcessorCount.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVPCHSupport.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVModule.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\TestBigEndian.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVFindLibsGrfmt.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVFindWebP.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVFindLibsGUI.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\checks\win32uitest.cpp;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVFindLibsVideo.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\checks\vfwtest.cpp;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\FindGstreamerWindows.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\ffmpeg\ffmpeg.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\ffmpeg\ffmpeg_version.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVFindLibsPerf.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVFindIPP.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\ippicv\downloader.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVDetectCUDA.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVFindLAPACK.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVFindMKL.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVFindOpenBLAS.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindDoxygen.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVDetectPython.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVDetectApacheAnt.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindJNI.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeFindJavaCommon.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVDetectOpenCL.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\checks\opencl.cpp;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVDetectDirectX.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\checks\directx.cpp;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\checks\directx.cpp;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVFindMatlab.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVDetectVTK.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\templates\custom_hal.hpp.in;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVExtraTargets.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\templates\cmake_uninstall.cmake.in;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVGenHeaders.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\templates\cvconfig.h.in;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\templates\cvconfig.h.in;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\templates\opencv_modules.hpp.in;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVGenPkgconfig.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\templates\opencv-XXX.pc.in;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVGenAndroidMK.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVGenConfig.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\templates\OpenCVConfig.cmake.in;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\templates\OpenCVConfig-version.cmake.in;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\templates\OpenCVConfig-version.cmake.in;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\templates\OpenCVConfig.cmake.in;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\templates\OpenCVConfig.root-WIN32.cmake.in;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVGenABI.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVPackaging.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.6\Templates\CPackConfig.cmake.in;C:\Program Files\CMake\share\cmake-3.6\Templates\CPackConfig.cmake.in;C:\Users\aalleboudy\Downloads\opencv\sources\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\aalleboudy\Downloads\opencv\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/aalleboudy/Downloads/opencv/sources/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/aalleboudy/Downloads/opencv/sources -BC:/Users/aalleboudy/Downloads/opencv/build --check-stamp-file C:\Users\aalleboudy\Downloads\opencv\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/aalleboudy/Downloads/opencv/sources/CMakeLists.txt;C:\Users\aalleboudy\Downloads\opencv\sources\CMakeLists.txt;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVMinDepVersions.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVUtils.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Users\aalleboudy\Downloads\opencv\build\CMakeFiles\3.6.3\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\aalleboudy\Downloads\opencv\build\CMakeFiles\3.6.3\CMakeCXXCompiler.cmake;C:\Users\aalleboudy\Downloads\opencv\build\CMakeFiles\3.6.3\CMakeCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC.cmake;C:\Users\aalleboudy\Downloads\opencv\build\CMakeFiles\3.6.3\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCommonLanguageInclude.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVDetectCXXCompiler.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVVersion.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include\opencv2\core\version.hpp;C:\Program Files\CMake\share\cmake-3.6\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVCompilerOptions.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\checks\fp16.cpp;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVCRTLinkage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\ProcessorCount.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVPCHSupport.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVModule.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\TestBigEndian.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVFindLibsGrfmt.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVFindWebP.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVFindLibsGUI.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\checks\win32uitest.cpp;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVFindLibsVideo.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\checks\vfwtest.cpp;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\FindGstreamerWindows.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\ffmpeg\ffmpeg.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\ffmpeg\ffmpeg_version.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVFindLibsPerf.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVFindIPP.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\ippicv\downloader.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVDetectCUDA.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVFindLAPACK.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVFindMKL.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVFindOpenBLAS.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindDoxygen.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVDetectPython.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPythonInterp.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVDetectApacheAnt.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindJNI.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeFindJavaCommon.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVDetectOpenCL.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\checks\opencl.cpp;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVDetectDirectX.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\checks\directx.cpp;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\checks\directx.cpp;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVFindMatlab.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVDetectVTK.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\templates\custom_hal.hpp.in;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVExtraTargets.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\templates\cmake_uninstall.cmake.in;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVGenHeaders.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\templates\cvconfig.h.in;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\templates\cvconfig.h.in;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\templates\opencv_modules.hpp.in;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVGenPkgconfig.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\templates\opencv-XXX.pc.in;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVGenAndroidMK.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVGenConfig.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\templates\OpenCVConfig.cmake.in;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\templates\OpenCVConfig-version.cmake.in;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\templates\OpenCVConfig-version.cmake.in;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\templates\OpenCVConfig.cmake.in;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\templates\OpenCVConfig.root-WIN32.cmake.in;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVGenABI.cmake;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\OpenCVPackaging.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CPack.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CPackComponent.cmake;C:\Program Files\CMake\share\cmake-3.6\Templates\CPackConfig.cmake.in;C:\Program Files\CMake\share\cmake-3.6\Templates\CPackConfig.cmake.in;C:\Users\aalleboudy\Downloads\opencv\sources\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\aalleboudy\Downloads\opencv\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/ZERO_CHECK.vcxproj">
+      <Project>9723EDC2-C47D-3A79-B4B7-97DCD40CCCEC</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/3rdparty/openexr/IlmImf.vcxproj">
+      <Project>C5F65977-B610-32DC-A2FF-6BBBA88056AB</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/3rdparty/libjasper/libjasper.vcxproj">
+      <Project>85FDFC71-3B5E-3637-B07E-330EF52D5E40</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/3rdparty/libjpeg/libjpeg.vcxproj">
+      <Project>FDEDFADF-98F7-3C7F-8F7C-B6520D06BD16</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/3rdparty/libpng/libpng.vcxproj">
+      <Project>2BCACFAB-564E-3C67-B73A-6CBF453F7CA0</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/3rdparty/libtiff/libtiff.vcxproj">
+      <Project>8CF4C6F9-AFC3-3421-8AE9-9437DCC7C155</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/3rdparty/libwebp/libwebp.vcxproj">
+      <Project>28533F47-8388-32DA-8AC6-E511478BC395</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/apps/annotation/opencv_annotation.vcxproj">
+      <Project>999D9E99-58A7-3735-A8C7-4B655FD94C72</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/calib3d/opencv_calib3d.vcxproj">
+      <Project>FADF1D5E-0A6C-387A-9854-78D64C4BAF52</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/core/opencv_core.vcxproj">
+      <Project>B11B6F37-C1B5-3BB0-8ADB-B589543D102B</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/apps/createsamples/opencv_createsamples.vcxproj">
+      <Project>2A9BF5AE-22A3-37F0-B4F9-C3165F69FC57</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/features2d/opencv_features2d.vcxproj">
+      <Project>CB4D3D03-9998-3CF8-A2C8-1F763731F47E</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/flann/opencv_flann.vcxproj">
+      <Project>9AE65CAA-AC94-3E47-B985-2339A64F6998</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/highgui/opencv_highgui.vcxproj">
+      <Project>7B5CA51F-6F23-3425-899D-F8CE272A38A7</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/imgcodecs/opencv_imgcodecs.vcxproj">
+      <Project>760C9718-557A-3A42-A24B-ECBF7EDC2EE0</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/imgproc/opencv_imgproc.vcxproj">
+      <Project>757AE486-FD93-3DA5-B476-8569AEA9A965</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/ml/opencv_ml.vcxproj">
+      <Project>06E854C7-D45D-36A7-9C49-AF945B600384</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/objdetect/opencv_objdetect.vcxproj">
+      <Project>9D6F45B7-E7FE-3F64-8F69-4759E745A648</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/calib3d/opencv_perf_calib3d.vcxproj">
+      <Project>D2E834E2-DBAB-3817-8B4A-7FD309933682</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/core/opencv_perf_core.vcxproj">
+      <Project>A135A0A6-5095-3EFD-84D0-C22B5D9FECD1</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/features2d/opencv_perf_features2d.vcxproj">
+      <Project>5EF09FE2-96EE-3FBD-BB6B-CA17B85834D1</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/imgcodecs/opencv_perf_imgcodecs.vcxproj">
+      <Project>445C78F5-3FF3-330F-B524-9A8BD9E46958</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/imgproc/opencv_perf_imgproc.vcxproj">
+      <Project>2890EAC5-8F07-38A0-96AF-0719FA82A336</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/objdetect/opencv_perf_objdetect.vcxproj">
+      <Project>78572D73-0679-333F-9F32-44870140B35A</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/photo/opencv_perf_photo.vcxproj">
+      <Project>AC5DEBDF-0DC3-3903-8EA6-2DEDAF7488B6</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/stitching/opencv_perf_stitching.vcxproj">
+      <Project>F6E85ACA-292B-355F-AA5F-D5963A060E8C</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/superres/opencv_perf_superres.vcxproj">
+      <Project>393ECE71-A987-3762-AA5B-B444C7A349CB</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/video/opencv_perf_video.vcxproj">
+      <Project>F0A10BAC-E37A-3544-85D0-B46FAF10E22D</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/videoio/opencv_perf_videoio.vcxproj">
+      <Project>7CBEE61A-CC17-3575-BC4E-E643E49F26DE</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/photo/opencv_photo.vcxproj">
+      <Project>2B2F6B22-D708-37E9-9939-32A41A0F520E</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/python3/opencv_python3.vcxproj">
+      <Project>5967B1C0-95FD-369F-B0EE-E8729CD80174</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/shape/opencv_shape.vcxproj">
+      <Project>3AB32362-2377-343D-90E0-608F7E63C613</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/stitching/opencv_stitching.vcxproj">
+      <Project>20BEEFA6-B27B-3DF1-B376-A7F3F720E93E</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/superres/opencv_superres.vcxproj">
+      <Project>0B4C652C-D411-367A-A7F9-9CFEC682C5C2</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/calib3d/opencv_test_calib3d.vcxproj">
+      <Project>2A04DB04-AC69-37CC-9607-4E71EA8A281F</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/core/opencv_test_core.vcxproj">
+      <Project>B93E8234-4B58-3376-ACC1-AE9AE6929441</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/features2d/opencv_test_features2d.vcxproj">
+      <Project>356CBF2A-6C3A-3FC2-8564-D05FA8A3BD95</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/flann/opencv_test_flann.vcxproj">
+      <Project>0AC1C359-F088-3E4E-87BE-D3242034A46C</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/highgui/opencv_test_highgui.vcxproj">
+      <Project>84A11614-4300-39E4-AB75-45C95679E168</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/imgcodecs/opencv_test_imgcodecs.vcxproj">
+      <Project>2B95F336-7AF3-33FD-AC13-A971AA1A06C3</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/imgproc/opencv_test_imgproc.vcxproj">
+      <Project>0B35546A-71E3-3716-AEB8-31886F5C7564</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/ml/opencv_test_ml.vcxproj">
+      <Project>72A9B1C8-EA00-3269-85CD-C1EA59BD56A1</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/objdetect/opencv_test_objdetect.vcxproj">
+      <Project>14654466-C348-34FE-A4C9-A83C96BABA88</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/photo/opencv_test_photo.vcxproj">
+      <Project>20815156-5CFE-3A2D-B46B-976C8ECE469E</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/shape/opencv_test_shape.vcxproj">
+      <Project>348E397F-9877-31B2-9BC2-40F6CF9BD1B2</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/stitching/opencv_test_stitching.vcxproj">
+      <Project>3B017BCF-55D3-3063-8D0F-1B208591FA99</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/superres/opencv_test_superres.vcxproj">
+      <Project>80134692-23E8-3F5A-BBCF-EEFFF218A3F7</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/video/opencv_test_video.vcxproj">
+      <Project>20F7A290-7755-3528-B014-C730DEF8BFAD</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/videoio/opencv_test_videoio.vcxproj">
+      <Project>5734D725-BF3C-363D-B0E0-F8E5AC97AE83</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/apps/traincascade/opencv_traincascade.vcxproj">
+      <Project>5625AC96-F586-3937-AF49-3D35900D35BC</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/ts/opencv_ts.vcxproj">
+      <Project>C032F681-5AD6-35F0-9A5B-857719577048</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/apps/version/opencv_version.vcxproj">
+      <Project>C1881E18-C599-31B7-88F3-E21388C497F5</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/video/opencv_video.vcxproj">
+      <Project>FF4F9C27-0147-3519-9E0A-AA15F72A9828</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/videoio/opencv_videoio.vcxproj">
+      <Project>B1A6BF83-CE42-3D63-8269-517719F65AAF</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/videostab/opencv_videostab.vcxproj">
+      <Project>C50A066F-BC8A-387A-898D-41D436837DFA</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/apps/visualisation/opencv_visualisation.vcxproj">
+      <Project>5BD030F1-11C8-394E-8D33-507098C579AF</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/3rdparty/zlib/zlib.vcxproj">
+      <Project>82650339-E50B-3B52-B1EF-D9F7EA1D8A23</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

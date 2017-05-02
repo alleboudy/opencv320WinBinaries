@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\test\ocl\test_arithm.cpp">
+      <Filter>opencv_core\Src\ocl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\test\ocl\test_channels.cpp">
+      <Filter>opencv_core\Src\ocl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\test\ocl\test_dft.cpp">
+      <Filter>opencv_core\Src\ocl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\test\ocl\test_gemm.cpp">
+      <Filter>opencv_core\Src\ocl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\test\ocl\test_image2d.cpp">
+      <Filter>opencv_core\Src\ocl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\test\ocl\test_matrix_expr.cpp">
+      <Filter>opencv_core\Src\ocl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\test\ocl\test_matrix_operation.cpp">
+      <Filter>opencv_core\Src\ocl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\test\test_arithm.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\test\test_concatenation.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\test\test_conjugate_gradient.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\test\test_countnonzero.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\test\test_downhill_simplex.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\test\test_ds.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\test\test_dxt.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\test\test_eigen.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\test\test_hal_core.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\test\test_intrin.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\test\test_io.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\test\test_ippasync.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\test\test_lpsolver.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\test\test_main.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\test\test_mat.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\test\test_math.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\test\test_misc.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\test\test_operations.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\test\test_ptr.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\test\test_rand.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\test\test_rotatedrect.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\test\test_umat.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\test\test_utils.cpp">
+      <Filter>opencv_core\Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\test\test_intrin_utils.hpp">
+      <Filter>opencv_core\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\test\test_precomp.hpp">
+      <Filter>opencv_core\Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\world\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="opencv_core\Src">
+      <UniqueIdentifier>{12741050-F5E9-3B2B-AD61-03C91E82A3F3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_core\Include">
+      <UniqueIdentifier>{49177637-D730-3749-BBFA-1E7A16A2C003}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_core">
+      <UniqueIdentifier>{78AFBB88-B5D1-376A-B2DB-337EBB346F9C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_core\Src\ocl">
+      <UniqueIdentifier>{8651D577-F1C6-397C-B281-D356BA567167}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\test\ocl\test_denoising.cpp">
+      <Filter>opencv_photo\Src\ocl</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\test\test_cloning.cpp">
+      <Filter>opencv_photo\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\test\test_decolor.cpp">
+      <Filter>opencv_photo\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\test\test_denoise_tvl1.cpp">
+      <Filter>opencv_photo\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\test\test_denoising.cpp">
+      <Filter>opencv_photo\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\test\test_denoising.cuda.cpp">
+      <Filter>opencv_photo\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\test\test_hdr.cpp">
+      <Filter>opencv_photo\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\test\test_inpaint.cpp">
+      <Filter>opencv_photo\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\test\test_main.cpp">
+      <Filter>opencv_photo\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\test\test_npr.cpp">
+      <Filter>opencv_photo\Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\test\test_precomp.hpp">
+      <Filter>opencv_photo\Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\world\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="opencv_photo\Src">
+      <UniqueIdentifier>{20809A54-3477-3FBA-83DF-D1A95C9B912F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_photo\Include">
+      <UniqueIdentifier>{E4CEF422-2828-3230-A4DE-F675D7C452A8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_photo\Src\ocl">
+      <UniqueIdentifier>{1BBA896F-880C-35AE-A279-94F0297C1494}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_photo">
+      <UniqueIdentifier>{9B6713B3-5C4B-36DF-8E1E-01547348BB96}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

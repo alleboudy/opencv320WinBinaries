@@ -1,0 +1,1158 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{DB78BBCA-DFE2-331B-B3A5-9A06479D1422}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>opencv_world</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\aalleboudy\Downloads\opencv\build\bin\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">opencv_world.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">opencv_world320d</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\aalleboudy\Downloads\opencv\build\bin\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">opencv_world.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">opencv_world320</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\libjasper;C:\Users\aalleboudy\Downloads\opencv\build\3rdparty\libtiff;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\libtiff;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\libpng;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\libwebp;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\libjpeg;C:\Users\aalleboudy\Downloads\opencv\build\3rdparty\zlib;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\zlib;C:\Users\aalleboudy\Downloads\opencv\build\3rdparty\ippicv\ippicv_win\include;C:\Users\aalleboudy\Downloads\opencv\build;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\openexr\Half;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\openexr\Iex;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\openexr\IlmThread;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\openexr\Imath;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\openexr\IlmImf;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\include;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\include\ffmpeg_;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src;C:\Users\aalleboudy\Downloads\opencv\build\modules\world;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\include\opencl\1.2;C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\ml\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\ml\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\video\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\video\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\videoio\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\videoio\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\highgui\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\highgui\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\superres\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\superres\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\stitching\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\stitching\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\videostab\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\videostab\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\world\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\world\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4251;4324;4275;4589</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ProcessorNumber>4</ProcessorNumber>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_DEBUG;CVAPI_EXPORTS;_VARIADIC_MAX=10;__OPENCV_BUILD=1;HAVE_WEBP;IMGCODECS_EXPORTS;VIDEOIO_EXPORTS;HIGHGUI_EXPORTS;CMAKE_INTDIR="Debug";CVAPI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:\Users\aalleboudy\Downloads\opencv\build\lib\Debug\opencv_world320d.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_DEBUG;CVAPI_EXPORTS;_VARIADIC_MAX=10;__OPENCV_BUILD=1;HAVE_WEBP;IMGCODECS_EXPORTS;VIDEOIO_EXPORTS;HIGHGUI_EXPORTS;CMAKE_INTDIR=\"Debug\";CVAPI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\libjasper;C:\Users\aalleboudy\Downloads\opencv\build\3rdparty\libtiff;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\libtiff;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\libpng;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\libwebp;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\libjpeg;C:\Users\aalleboudy\Downloads\opencv\build\3rdparty\zlib;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\zlib;C:\Users\aalleboudy\Downloads\opencv\build\3rdparty\ippicv\ippicv_win\include;C:\Users\aalleboudy\Downloads\opencv\build;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\openexr\Half;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\openexr\Iex;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\openexr\IlmThread;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\openexr\Imath;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\openexr\IlmImf;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\include;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\include\ffmpeg_;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src;C:\Users\aalleboudy\Downloads\opencv\build\modules\world;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\include\opencl\1.2;C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\ml\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\ml\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\video\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\video\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\videoio\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\videoio\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\highgui\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\highgui\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\superres\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\superres\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\stitching\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\stitching\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\videostab\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\videostab\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\world\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\world\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\libjasper;C:\Users\aalleboudy\Downloads\opencv\build\3rdparty\libtiff;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\libtiff;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\libpng;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\libwebp;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\libjpeg;C:\Users\aalleboudy\Downloads\opencv\build\3rdparty\zlib;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\zlib;C:\Users\aalleboudy\Downloads\opencv\build\3rdparty\ippicv\ippicv_win\include;C:\Users\aalleboudy\Downloads\opencv\build;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\openexr\Half;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\openexr\Iex;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\openexr\IlmThread;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\openexr\Imath;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\openexr\IlmImf;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\include;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\include\ffmpeg_;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src;C:\Users\aalleboudy\Downloads\opencv\build\modules\world;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\include\opencl\1.2;C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\ml\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\ml\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\video\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\video\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\videoio\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\videoio\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\highgui\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\highgui\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\superres\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\superres\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\stitching\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\stitching\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\videostab\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\videostab\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\world\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\world\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Copying C:/Users/aalleboudy/Downloads/opencv/sources/3rdparty/ffmpeg/opencv_ffmpeg.dll to the output directory</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/aalleboudy/Downloads/opencv/sources/3rdparty/ffmpeg/opencv_ffmpeg.dll C:/Users/aalleboudy/Downloads/opencv/build/bin/Release/opencv_ffmpeg320.dll
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/aalleboudy/Downloads/opencv/sources/3rdparty/ffmpeg/opencv_ffmpeg.dll C:/Users/aalleboudy/Downloads/opencv/build/bin/Debug/opencv_ffmpeg320.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\3rdparty\lib\Debug\zlibd.lib;..\..\3rdparty\ippicv\ippicv_win\lib\ia32\ippicvmt.lib;..\..\3rdparty\lib\Debug\zlibd.lib;..\..\3rdparty\lib\Debug\libjpegd.lib;..\..\3rdparty\lib\Debug\libwebpd.lib;..\..\3rdparty\lib\Debug\libpngd.lib;..\..\3rdparty\lib\Debug\libtiffd.lib;..\..\3rdparty\lib\Debug\libjasperd.lib;..\..\3rdparty\lib\Debug\IlmImfd.lib;vfw32.lib;comctl32.lib;gdi32.lib;ole32.lib;setupapi.lib;ws2_32.lib;..\..\3rdparty\lib\Debug\zlibd.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Users/aalleboudy/Downloads/opencv/sources/3rdparty/lib;C:/Users/aalleboudy/Downloads/opencv/sources/3rdparty/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>atlthunk.lib;atlsd.lib;libcmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/aalleboudy/Downloads/opencv/build/lib/Debug/opencv_world320d.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/aalleboudy/Downloads/opencv/build/bin/Debug/opencv_world320d.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\libjasper;C:\Users\aalleboudy\Downloads\opencv\build\3rdparty\libtiff;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\libtiff;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\libpng;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\libwebp;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\libjpeg;C:\Users\aalleboudy\Downloads\opencv\build\3rdparty\zlib;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\zlib;C:\Users\aalleboudy\Downloads\opencv\build\3rdparty\ippicv\ippicv_win\include;C:\Users\aalleboudy\Downloads\opencv\build;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\openexr\Half;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\openexr\Iex;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\openexr\IlmThread;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\openexr\Imath;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\openexr\IlmImf;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\include;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\include\ffmpeg_;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src;C:\Users\aalleboudy\Downloads\opencv\build\modules\world;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\include\opencl\1.2;C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\ml\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\ml\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\video\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\video\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\videoio\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\videoio\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\highgui\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\highgui\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\superres\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\superres\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\stitching\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\stitching\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\videostab\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\videostab\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\world\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\world\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4251;4324;4275;4589</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ProcessorNumber>4</ProcessorNumber>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;CVAPI_EXPORTS;_VARIADIC_MAX=10;__OPENCV_BUILD=1;HAVE_WEBP;IMGCODECS_EXPORTS;VIDEOIO_EXPORTS;HIGHGUI_EXPORTS;CMAKE_INTDIR="Release";CVAPI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>C:\Users\aalleboudy\Downloads\opencv\build\lib\Release\opencv_world320.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;CVAPI_EXPORTS;_VARIADIC_MAX=10;__OPENCV_BUILD=1;HAVE_WEBP;IMGCODECS_EXPORTS;VIDEOIO_EXPORTS;HIGHGUI_EXPORTS;CMAKE_INTDIR=\"Release\";CVAPI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\libjasper;C:\Users\aalleboudy\Downloads\opencv\build\3rdparty\libtiff;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\libtiff;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\libpng;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\libwebp;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\libjpeg;C:\Users\aalleboudy\Downloads\opencv\build\3rdparty\zlib;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\zlib;C:\Users\aalleboudy\Downloads\opencv\build\3rdparty\ippicv\ippicv_win\include;C:\Users\aalleboudy\Downloads\opencv\build;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\openexr\Half;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\openexr\Iex;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\openexr\IlmThread;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\openexr\Imath;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\openexr\IlmImf;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\include;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\include\ffmpeg_;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src;C:\Users\aalleboudy\Downloads\opencv\build\modules\world;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\include\opencl\1.2;C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\ml\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\ml\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\video\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\video\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\videoio\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\videoio\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\highgui\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\highgui\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\superres\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\superres\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\stitching\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\stitching\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\videostab\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\videostab\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\world\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\world\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\libjasper;C:\Users\aalleboudy\Downloads\opencv\build\3rdparty\libtiff;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\libtiff;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\libpng;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\libwebp;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\libjpeg;C:\Users\aalleboudy\Downloads\opencv\build\3rdparty\zlib;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\zlib;C:\Users\aalleboudy\Downloads\opencv\build\3rdparty\ippicv\ippicv_win\include;C:\Users\aalleboudy\Downloads\opencv\build;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\openexr\Half;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\openexr\Iex;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\openexr\IlmThread;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\openexr\Imath;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\openexr\IlmImf;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\include;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\include\ffmpeg_;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src;C:\Users\aalleboudy\Downloads\opencv\build\modules\world;C:\Users\aalleboudy\Downloads\opencv\sources\3rdparty\include\opencl\1.2;C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\ml\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\ml\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\video\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\video\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\videoio\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\videoio\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\highgui\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\highgui\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\superres\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\superres\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\stitching\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\stitching\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\videostab\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\videostab\src;C:\Users\aalleboudy\Downloads\opencv\sources\modules\world\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\world\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>Copying C:/Users/aalleboudy/Downloads/opencv/sources/3rdparty/ffmpeg/opencv_ffmpeg.dll to the output directory</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/aalleboudy/Downloads/opencv/sources/3rdparty/ffmpeg/opencv_ffmpeg.dll C:/Users/aalleboudy/Downloads/opencv/build/bin/Release/opencv_ffmpeg320.dll
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different C:/Users/aalleboudy/Downloads/opencv/sources/3rdparty/ffmpeg/opencv_ffmpeg.dll C:/Users/aalleboudy/Downloads/opencv/build/bin/Debug/opencv_ffmpeg320.dll
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\3rdparty\lib\Release\zlib.lib;..\..\3rdparty\ippicv\ippicv_win\lib\ia32\ippicvmt.lib;..\..\3rdparty\lib\Release\zlib.lib;..\..\3rdparty\lib\Release\libjpeg.lib;..\..\3rdparty\lib\Release\libwebp.lib;..\..\3rdparty\lib\Release\libpng.lib;..\..\3rdparty\lib\Release\libtiff.lib;..\..\3rdparty\lib\Release\libjasper.lib;..\..\3rdparty\lib\Release\IlmImf.lib;vfw32.lib;comctl32.lib;gdi32.lib;ole32.lib;setupapi.lib;ws2_32.lib;..\..\3rdparty\lib\Release\zlib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:/Users/aalleboudy/Downloads/opencv/sources/3rdparty/lib;C:/Users/aalleboudy/Downloads/opencv/sources/3rdparty/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>atlthunk.lib;atlsd.lib;libcmt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/aalleboudy/Downloads/opencv/build/lib/Release/opencv_world320.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/aalleboudy/Downloads/opencv/build/bin/Release/opencv_world320.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\world\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/aalleboudy/Downloads/opencv/sources/modules/world/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/aalleboudy/Downloads/opencv/sources -BC:/Users/aalleboudy/Downloads/opencv/build --check-stamp-file C:\Users\aalleboudy\Downloads\opencv\build\modules\world\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/aalleboudy/Downloads/opencv/sources/modules/world/CMakeLists.txt;C:\Users\aalleboudy\Downloads\opencv\sources\modules\world\CMakeLists.txt;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\CMakeLists.txt;C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\CMakeLists.txt;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\CMakeLists.txt;C:\Users\aalleboudy\Downloads\opencv\sources\modules\ml\CMakeLists.txt;C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\CMakeLists.txt;C:\Users\aalleboudy\Downloads\opencv\sources\modules\video\CMakeLists.txt;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\CMakeLists.txt;C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\CMakeLists.txt;C:\Users\aalleboudy\Downloads\opencv\sources\modules\videoio\CMakeLists.txt;C:\Users\aalleboudy\Downloads\opencv\sources\modules\highgui\CMakeLists.txt;C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\CMakeLists.txt;C:\Users\aalleboudy\Downloads\opencv\sources\modules\superres\CMakeLists.txt;C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\CMakeLists.txt;C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\CMakeLists.txt;C:\Users\aalleboudy\Downloads\opencv\sources\modules\stitching\CMakeLists.txt;C:\Users\aalleboudy\Downloads\opencv\sources\modules\videostab\CMakeLists.txt;C:\Users\aalleboudy\Downloads\opencv\sources\modules\world\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\aalleboudy\Downloads\opencv\build\modules\world\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/aalleboudy/Downloads/opencv/sources/modules/world/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/aalleboudy/Downloads/opencv/sources -BC:/Users/aalleboudy/Downloads/opencv/build --check-stamp-file C:\Users\aalleboudy\Downloads\opencv\build\modules\world\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/aalleboudy/Downloads/opencv/sources/modules/world/CMakeLists.txt;C:\Users\aalleboudy\Downloads\opencv\sources\modules\world\CMakeLists.txt;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\CMakeLists.txt;C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\CMakeLists.txt;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\CMakeLists.txt;C:\Users\aalleboudy\Downloads\opencv\sources\modules\ml\CMakeLists.txt;C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\CMakeLists.txt;C:\Users\aalleboudy\Downloads\opencv\sources\modules\video\CMakeLists.txt;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\CMakeLists.txt;C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\CMakeLists.txt;C:\Users\aalleboudy\Downloads\opencv\sources\modules\videoio\CMakeLists.txt;C:\Users\aalleboudy\Downloads\opencv\sources\modules\highgui\CMakeLists.txt;C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\CMakeLists.txt;C:\Users\aalleboudy\Downloads\opencv\sources\modules\superres\CMakeLists.txt;C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\CMakeLists.txt;C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\CMakeLists.txt;C:\Users\aalleboudy\Downloads\opencv\sources\modules\stitching\CMakeLists.txt;C:\Users\aalleboudy\Downloads\opencv\sources\modules\videostab\CMakeLists.txt;C:\Users\aalleboudy\Downloads\opencv\sources\modules\world\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\aalleboudy\Downloads\opencv\build\modules\world\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\aalleboudy\Downloads\opencv\build\CMakeFiles\4dea11313a2ebf00df97785ee63562ef\opencl_kernels_core.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating opencl_kernels_core.cpp, opencl_kernels_core.hpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DMODULE_NAME=core -DCL_DIR=C:/Users/aalleboudy/Downloads/opencv/sources/modules/core/src/opencl -DOUTPUT=C:/Users/aalleboudy/Downloads/opencv/build/modules/world/opencl_kernels_core.cpp -P C:/Users/aalleboudy/Downloads/opencv/sources/cmake/cl2cpp.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/aalleboudy/Downloads/opencv/build/CMakeFiles/4dea11313a2ebf00df97785ee63562ef/opencl_kernels_core.cpp.rule;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\arithm.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\convert.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\copymakeborder.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\copyset.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\cvtclr_dx.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\fft.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\flip.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\gemm.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\inrange.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\lut.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\meanstddev.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\minmaxloc.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\mixchannels.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\mulspectrums.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\normalize.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\reduce.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\reduce2.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\repeat.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\set_identity.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\split_merge.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\transpose.cl;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\cl2cpp.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_core.cpp;C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_core.hpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating opencl_kernels_core.cpp, opencl_kernels_core.hpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DMODULE_NAME=core -DCL_DIR=C:/Users/aalleboudy/Downloads/opencv/sources/modules/core/src/opencl -DOUTPUT=C:/Users/aalleboudy/Downloads/opencv/build/modules/world/opencl_kernels_core.cpp -P C:/Users/aalleboudy/Downloads/opencv/sources/cmake/cl2cpp.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/aalleboudy/Downloads/opencv/build/CMakeFiles/4dea11313a2ebf00df97785ee63562ef/opencl_kernels_core.cpp.rule;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\arithm.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\convert.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\copymakeborder.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\copyset.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\cvtclr_dx.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\fft.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\flip.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\gemm.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\inrange.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\lut.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\meanstddev.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\minmaxloc.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\mixchannels.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\mulspectrums.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\normalize.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\reduce.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\reduce2.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\repeat.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\set_identity.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\split_merge.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\transpose.cl;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\cl2cpp.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_core.cpp;C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_core.hpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\aalleboudy\Downloads\opencv\build\CMakeFiles\4dea11313a2ebf00df97785ee63562ef\opencl_kernels_imgproc.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating opencl_kernels_imgproc.cpp, opencl_kernels_imgproc.hpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DMODULE_NAME=imgproc -DCL_DIR=C:/Users/aalleboudy/Downloads/opencv/sources/modules/imgproc/src/opencl -DOUTPUT=C:/Users/aalleboudy/Downloads/opencv/build/modules/world/opencl_kernels_imgproc.cpp -P C:/Users/aalleboudy/Downloads/opencv/sources/cmake/cl2cpp.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/aalleboudy/Downloads/opencv/build/CMakeFiles/4dea11313a2ebf00df97785ee63562ef/opencl_kernels_imgproc.cpp.rule;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\accumulate.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\bilateral.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\blend_linear.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\boxFilter.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\boxFilter3x3.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\calc_back_project.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\canny.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\clahe.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\corner.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\covardata.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\cvtcolor.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\filter2D.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\filter2DSmall.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\filterSepCol.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\filterSepRow.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\filterSep_singlePass.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\filterSmall.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\gaussianBlur3x3.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\gaussianBlur5x5.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\gftt.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\histogram.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\hough_lines.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\integral_sum.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\laplacian3.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\laplacian5.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\linearPolar.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\logPolar.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\match_template.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\medianFilter.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\moments.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\morph.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\morph3x3.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\precornerdetect.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\pyr_down.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\pyr_up.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\pyramid_up.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\remap.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\resize.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\sepFilter3x3.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\threshold.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\warp_affine.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\warp_perspective.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\warp_transform.cl;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\cl2cpp.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_imgproc.cpp;C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_imgproc.hpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating opencl_kernels_imgproc.cpp, opencl_kernels_imgproc.hpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DMODULE_NAME=imgproc -DCL_DIR=C:/Users/aalleboudy/Downloads/opencv/sources/modules/imgproc/src/opencl -DOUTPUT=C:/Users/aalleboudy/Downloads/opencv/build/modules/world/opencl_kernels_imgproc.cpp -P C:/Users/aalleboudy/Downloads/opencv/sources/cmake/cl2cpp.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/aalleboudy/Downloads/opencv/build/CMakeFiles/4dea11313a2ebf00df97785ee63562ef/opencl_kernels_imgproc.cpp.rule;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\accumulate.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\bilateral.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\blend_linear.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\boxFilter.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\boxFilter3x3.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\calc_back_project.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\canny.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\clahe.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\corner.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\covardata.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\cvtcolor.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\filter2D.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\filter2DSmall.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\filterSepCol.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\filterSepRow.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\filterSep_singlePass.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\filterSmall.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\gaussianBlur3x3.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\gaussianBlur5x5.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\gftt.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\histogram.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\hough_lines.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\integral_sum.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\laplacian3.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\laplacian5.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\linearPolar.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\logPolar.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\match_template.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\medianFilter.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\moments.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\morph.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\morph3x3.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\precornerdetect.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\pyr_down.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\pyr_up.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\pyramid_up.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\remap.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\resize.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\sepFilter3x3.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\threshold.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\warp_affine.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\warp_perspective.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\warp_transform.cl;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\cl2cpp.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_imgproc.cpp;C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_imgproc.hpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\aalleboudy\Downloads\opencv\build\CMakeFiles\4dea11313a2ebf00df97785ee63562ef\opencl_kernels_photo.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating opencl_kernels_photo.cpp, opencl_kernels_photo.hpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DMODULE_NAME=photo -DCL_DIR=C:/Users/aalleboudy/Downloads/opencv/sources/modules/photo/src/opencl -DOUTPUT=C:/Users/aalleboudy/Downloads/opencv/build/modules/world/opencl_kernels_photo.cpp -P C:/Users/aalleboudy/Downloads/opencv/sources/cmake/cl2cpp.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/aalleboudy/Downloads/opencv/build/CMakeFiles/4dea11313a2ebf00df97785ee63562ef/opencl_kernels_photo.cpp.rule;C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\src\opencl\nlmeans.cl;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\cl2cpp.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_photo.cpp;C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_photo.hpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating opencl_kernels_photo.cpp, opencl_kernels_photo.hpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DMODULE_NAME=photo -DCL_DIR=C:/Users/aalleboudy/Downloads/opencv/sources/modules/photo/src/opencl -DOUTPUT=C:/Users/aalleboudy/Downloads/opencv/build/modules/world/opencl_kernels_photo.cpp -P C:/Users/aalleboudy/Downloads/opencv/sources/cmake/cl2cpp.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/aalleboudy/Downloads/opencv/build/CMakeFiles/4dea11313a2ebf00df97785ee63562ef/opencl_kernels_photo.cpp.rule;C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\src\opencl\nlmeans.cl;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\cl2cpp.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_photo.cpp;C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_photo.hpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\aalleboudy\Downloads\opencv\build\CMakeFiles\4dea11313a2ebf00df97785ee63562ef\opencl_kernels_video.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating opencl_kernels_video.cpp, opencl_kernels_video.hpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DMODULE_NAME=video -DCL_DIR=C:/Users/aalleboudy/Downloads/opencv/sources/modules/video/src/opencl -DOUTPUT=C:/Users/aalleboudy/Downloads/opencv/build/modules/world/opencl_kernels_video.cpp -P C:/Users/aalleboudy/Downloads/opencv/sources/cmake/cl2cpp.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/aalleboudy/Downloads/opencv/build/CMakeFiles/4dea11313a2ebf00df97785ee63562ef/opencl_kernels_video.cpp.rule;C:\Users\aalleboudy\Downloads\opencv\sources\modules\video\src\opencl\bgfg_mog2.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\video\src\opencl\optical_flow_farneback.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\video\src\opencl\optical_flow_tvl1.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\video\src\opencl\pyrlk.cl;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\cl2cpp.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_video.cpp;C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_video.hpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating opencl_kernels_video.cpp, opencl_kernels_video.hpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DMODULE_NAME=video -DCL_DIR=C:/Users/aalleboudy/Downloads/opencv/sources/modules/video/src/opencl -DOUTPUT=C:/Users/aalleboudy/Downloads/opencv/build/modules/world/opencl_kernels_video.cpp -P C:/Users/aalleboudy/Downloads/opencv/sources/cmake/cl2cpp.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/aalleboudy/Downloads/opencv/build/CMakeFiles/4dea11313a2ebf00df97785ee63562ef/opencl_kernels_video.cpp.rule;C:\Users\aalleboudy\Downloads\opencv\sources\modules\video\src\opencl\bgfg_mog2.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\video\src\opencl\optical_flow_farneback.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\video\src\opencl\optical_flow_tvl1.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\video\src\opencl\pyrlk.cl;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\cl2cpp.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_video.cpp;C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_video.hpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\aalleboudy\Downloads\opencv\build\CMakeFiles\4dea11313a2ebf00df97785ee63562ef\opencl_kernels_objdetect.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating opencl_kernels_objdetect.cpp, opencl_kernels_objdetect.hpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DMODULE_NAME=objdetect -DCL_DIR=C:/Users/aalleboudy/Downloads/opencv/sources/modules/objdetect/src/opencl -DOUTPUT=C:/Users/aalleboudy/Downloads/opencv/build/modules/world/opencl_kernels_objdetect.cpp -P C:/Users/aalleboudy/Downloads/opencv/sources/cmake/cl2cpp.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/aalleboudy/Downloads/opencv/build/CMakeFiles/4dea11313a2ebf00df97785ee63562ef/opencl_kernels_objdetect.cpp.rule;C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\src\opencl\cascadedetect.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\src\opencl\objdetect_hog.cl;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\cl2cpp.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_objdetect.cpp;C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_objdetect.hpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating opencl_kernels_objdetect.cpp, opencl_kernels_objdetect.hpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DMODULE_NAME=objdetect -DCL_DIR=C:/Users/aalleboudy/Downloads/opencv/sources/modules/objdetect/src/opencl -DOUTPUT=C:/Users/aalleboudy/Downloads/opencv/build/modules/world/opencl_kernels_objdetect.cpp -P C:/Users/aalleboudy/Downloads/opencv/sources/cmake/cl2cpp.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/aalleboudy/Downloads/opencv/build/CMakeFiles/4dea11313a2ebf00df97785ee63562ef/opencl_kernels_objdetect.cpp.rule;C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\src\opencl\cascadedetect.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\src\opencl\objdetect_hog.cl;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\cl2cpp.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_objdetect.cpp;C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_objdetect.hpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\aalleboudy\Downloads\opencv\build\CMakeFiles\4dea11313a2ebf00df97785ee63562ef\opencl_kernels_superres.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating opencl_kernels_superres.cpp, opencl_kernels_superres.hpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DMODULE_NAME=superres -DCL_DIR=C:/Users/aalleboudy/Downloads/opencv/sources/modules/superres/src/opencl -DOUTPUT=C:/Users/aalleboudy/Downloads/opencv/build/modules/world/opencl_kernels_superres.cpp -P C:/Users/aalleboudy/Downloads/opencv/sources/cmake/cl2cpp.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/aalleboudy/Downloads/opencv/build/CMakeFiles/4dea11313a2ebf00df97785ee63562ef/opencl_kernels_superres.cpp.rule;C:\Users\aalleboudy\Downloads\opencv\sources\modules\superres\src\opencl\superres_btvl1.cl;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\cl2cpp.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_superres.cpp;C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_superres.hpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating opencl_kernels_superres.cpp, opencl_kernels_superres.hpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DMODULE_NAME=superres -DCL_DIR=C:/Users/aalleboudy/Downloads/opencv/sources/modules/superres/src/opencl -DOUTPUT=C:/Users/aalleboudy/Downloads/opencv/build/modules/world/opencl_kernels_superres.cpp -P C:/Users/aalleboudy/Downloads/opencv/sources/cmake/cl2cpp.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/aalleboudy/Downloads/opencv/build/CMakeFiles/4dea11313a2ebf00df97785ee63562ef/opencl_kernels_superres.cpp.rule;C:\Users\aalleboudy\Downloads\opencv\sources\modules\superres\src\opencl\superres_btvl1.cl;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\cl2cpp.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_superres.cpp;C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_superres.hpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\aalleboudy\Downloads\opencv\build\CMakeFiles\4dea11313a2ebf00df97785ee63562ef\opencl_kernels_features2d.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating opencl_kernels_features2d.cpp, opencl_kernels_features2d.hpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DMODULE_NAME=features2d -DCL_DIR=C:/Users/aalleboudy/Downloads/opencv/sources/modules/features2d/src/opencl -DOUTPUT=C:/Users/aalleboudy/Downloads/opencv/build/modules/world/opencl_kernels_features2d.cpp -P C:/Users/aalleboudy/Downloads/opencv/sources/cmake/cl2cpp.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/aalleboudy/Downloads/opencv/build/CMakeFiles/4dea11313a2ebf00df97785ee63562ef/opencl_kernels_features2d.cpp.rule;C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\src\opencl\brute_force_match.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\src\opencl\fast.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\src\opencl\orb.cl;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\cl2cpp.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_features2d.cpp;C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_features2d.hpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating opencl_kernels_features2d.cpp, opencl_kernels_features2d.hpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DMODULE_NAME=features2d -DCL_DIR=C:/Users/aalleboudy/Downloads/opencv/sources/modules/features2d/src/opencl -DOUTPUT=C:/Users/aalleboudy/Downloads/opencv/build/modules/world/opencl_kernels_features2d.cpp -P C:/Users/aalleboudy/Downloads/opencv/sources/cmake/cl2cpp.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/aalleboudy/Downloads/opencv/build/CMakeFiles/4dea11313a2ebf00df97785ee63562ef/opencl_kernels_features2d.cpp.rule;C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\src\opencl\brute_force_match.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\src\opencl\fast.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\src\opencl\orb.cl;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\cl2cpp.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_features2d.cpp;C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_features2d.hpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\aalleboudy\Downloads\opencv\build\CMakeFiles\4dea11313a2ebf00df97785ee63562ef\opencl_kernels_calib3d.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating opencl_kernels_calib3d.cpp, opencl_kernels_calib3d.hpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DMODULE_NAME=calib3d -DCL_DIR=C:/Users/aalleboudy/Downloads/opencv/sources/modules/calib3d/src/opencl -DOUTPUT=C:/Users/aalleboudy/Downloads/opencv/build/modules/world/opencl_kernels_calib3d.cpp -P C:/Users/aalleboudy/Downloads/opencv/sources/cmake/cl2cpp.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/aalleboudy/Downloads/opencv/build/CMakeFiles/4dea11313a2ebf00df97785ee63562ef/opencl_kernels_calib3d.cpp.rule;C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\src\opencl\stereobm.cl;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\cl2cpp.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_calib3d.cpp;C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_calib3d.hpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating opencl_kernels_calib3d.cpp, opencl_kernels_calib3d.hpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DMODULE_NAME=calib3d -DCL_DIR=C:/Users/aalleboudy/Downloads/opencv/sources/modules/calib3d/src/opencl -DOUTPUT=C:/Users/aalleboudy/Downloads/opencv/build/modules/world/opencl_kernels_calib3d.cpp -P C:/Users/aalleboudy/Downloads/opencv/sources/cmake/cl2cpp.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/aalleboudy/Downloads/opencv/build/CMakeFiles/4dea11313a2ebf00df97785ee63562ef/opencl_kernels_calib3d.cpp.rule;C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\src\opencl\stereobm.cl;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\cl2cpp.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_calib3d.cpp;C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_calib3d.hpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\aalleboudy\Downloads\opencv\build\CMakeFiles\4dea11313a2ebf00df97785ee63562ef\opencl_kernels_stitching.cpp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Generating opencl_kernels_stitching.cpp, opencl_kernels_stitching.hpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DMODULE_NAME=stitching -DCL_DIR=C:/Users/aalleboudy/Downloads/opencv/sources/modules/stitching/src/opencl -DOUTPUT=C:/Users/aalleboudy/Downloads/opencv/build/modules/world/opencl_kernels_stitching.cpp -P C:/Users/aalleboudy/Downloads/opencv/sources/cmake/cl2cpp.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/aalleboudy/Downloads/opencv/build/CMakeFiles/4dea11313a2ebf00df97785ee63562ef/opencl_kernels_stitching.cpp.rule;C:\Users\aalleboudy\Downloads\opencv\sources\modules\stitching\src\opencl\multibandblend.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\stitching\src\opencl\warpers.cl;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\cl2cpp.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_stitching.cpp;C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_stitching.hpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Generating opencl_kernels_stitching.cpp, opencl_kernels_stitching.hpp</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -DMODULE_NAME=stitching -DCL_DIR=C:/Users/aalleboudy/Downloads/opencv/sources/modules/stitching/src/opencl -DOUTPUT=C:/Users/aalleboudy/Downloads/opencv/build/modules/world/opencl_kernels_stitching.cpp -P C:/Users/aalleboudy/Downloads/opencv/sources/cmake/cl2cpp.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/aalleboudy/Downloads/opencv/build/CMakeFiles/4dea11313a2ebf00df97785ee63562ef/opencl_kernels_stitching.cpp.rule;C:\Users\aalleboudy\Downloads\opencv\sources\modules\stitching\src\opencl\multibandblend.cl;C:\Users\aalleboudy\Downloads\opencv\sources\modules\stitching\src\opencl\warpers.cl;C:\Users\aalleboudy\Downloads\opencv\sources\cmake\cl2cpp.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_stitching.cpp;C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_stitching.hpp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include\opencv2\core.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include\opencv2\core\affine.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include\opencv2\core\base.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include\opencv2\core\bufferpool.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include\opencv2\core\core.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include\opencv2\core\cuda.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include\opencv2\core\cuda.inl.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include\opencv2\core\cuda_stream_accessor.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include\opencv2\core\cuda_types.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include\opencv2\core\cvstd.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include\opencv2\core\cvstd.inl.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include\opencv2\core\directx.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include\opencv2\core\eigen.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include\opencv2\core\fast_math.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include\opencv2\core\ippasync.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include\opencv2\core\mat.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include\opencv2\core\mat.inl.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include\opencv2\core\matx.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include\opencv2\core\neon_utils.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include\opencv2\core\ocl.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include\opencv2\core\ocl_genbase.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include\opencv2\core\opengl.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include\opencv2\core\operations.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include\opencv2\core\optim.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include\opencv2\core\ovx.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include\opencv2\core\persistence.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include\opencv2\core\private.cuda.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include\opencv2\core\private.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include\opencv2\core\ptr.inl.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include\opencv2\core\saturate.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include\opencv2\core\sse_utils.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include\opencv2\core\traits.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include\opencv2\core\types.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include\opencv2\core\utility.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include\opencv2\core\va_intel.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include\opencv2\core\version.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include\opencv2\core\wimage.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include\opencv2\core\core_c.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include\opencv2\core\cvdef.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include\opencv2\core\types_c.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include\opencv2\core\hal\hal.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include\opencv2\core\hal\intrin.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include\opencv2\core\hal\intrin_cpp.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include\opencv2\core\hal\intrin_neon.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include\opencv2\core\hal\intrin_sse.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include\opencv2\core\hal\interface.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\include\opencv2\flann.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\include\opencv2\flann\flann.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\include\opencv2\flann\flann_base.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\include\opencv2\flann\miniflann.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\include\opencv2\flann\all_indices.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\include\opencv2\flann\allocator.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\include\opencv2\flann\any.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\include\opencv2\flann\autotuned_index.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\include\opencv2\flann\composite_index.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\include\opencv2\flann\config.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\include\opencv2\flann\defines.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\include\opencv2\flann\dist.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\include\opencv2\flann\dummy.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\include\opencv2\flann\dynamic_bitset.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\include\opencv2\flann\general.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\include\opencv2\flann\ground_truth.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\include\opencv2\flann\hdf5.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\include\opencv2\flann\heap.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\include\opencv2\flann\hierarchical_clustering_index.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\include\opencv2\flann\index_testing.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\include\opencv2\flann\kdtree_index.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\include\opencv2\flann\kdtree_single_index.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\include\opencv2\flann\kmeans_index.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\include\opencv2\flann\linear_index.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\include\opencv2\flann\logger.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\include\opencv2\flann\lsh_index.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\include\opencv2\flann\lsh_table.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\include\opencv2\flann\matrix.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\include\opencv2\flann\nn_index.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\include\opencv2\flann\object_factory.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\include\opencv2\flann\params.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\include\opencv2\flann\random.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\include\opencv2\flann\result_set.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\include\opencv2\flann\sampling.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\include\opencv2\flann\saving.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\include\opencv2\flann\simplex_downhill.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\include\opencv2\flann\timer.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\include\opencv2\imgproc.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\include\opencv2\imgproc\imgproc.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\include\opencv2\imgproc\imgproc_c.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\include\opencv2\imgproc\types_c.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\include\opencv2\imgproc\hal\hal.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\include\opencv2\imgproc\hal\interface.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\include\opencv2\imgproc\detail\distortion_model.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\ml\include\opencv2\ml.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\ml\include\opencv2\ml\ml.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\include\opencv2\photo.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\include\opencv2\photo\cuda.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\include\opencv2\photo\photo.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\include\opencv2\photo\photo_c.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\video\include\opencv2\video.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\video\include\opencv2\video\background_segm.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\video\include\opencv2\video\tracking.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\video\include\opencv2\video\video.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\video\include\opencv2\video\tracking_c.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\include\opencv2\imgcodecs.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\include\opencv2\imgcodecs\imgcodecs.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\include\opencv2\imgcodecs\imgcodecs_c.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\include\opencv2\imgcodecs\ios.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\include\opencv2\shape.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\include\opencv2\shape\emdL1.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\include\opencv2\shape\hist_cost.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\include\opencv2\shape\shape.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\include\opencv2\shape\shape_distance.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\include\opencv2\shape\shape_transformer.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\videoio\include\opencv2\videoio.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\videoio\include\opencv2\videoio\videoio.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\videoio\include\opencv2\videoio\cap_ios.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\videoio\include\opencv2\videoio\videoio_c.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\highgui\include\opencv2\highgui.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\highgui\include\opencv2\highgui\highgui.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\highgui\include\opencv2\highgui\highgui_c.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\include\opencv2\objdetect.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\include\opencv2\objdetect\detection_based_tracker.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\include\opencv2\objdetect\objdetect.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\include\opencv2\objdetect\objdetect_c.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\superres\include\opencv2\superres.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\superres\include\opencv2\superres\optical_flow.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\include\opencv2\features2d.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\include\opencv2\features2d\features2d.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\include\opencv2\calib3d.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\include\opencv2\calib3d\calib3d.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\include\opencv2\calib3d\calib3d_c.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\stitching\include\opencv2\stitching.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\stitching\include\opencv2\stitching\warpers.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\stitching\include\opencv2\stitching\detail\autocalib.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\stitching\include\opencv2\stitching\detail\blenders.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\stitching\include\opencv2\stitching\detail\camera.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\stitching\include\opencv2\stitching\detail\exposure_compensate.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\stitching\include\opencv2\stitching\detail\matchers.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\stitching\include\opencv2\stitching\detail\motion_estimators.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\stitching\include\opencv2\stitching\detail\seam_finders.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\stitching\include\opencv2\stitching\detail\timelapsers.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\stitching\include\opencv2\stitching\detail\util.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\stitching\include\opencv2\stitching\detail\util_inl.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\stitching\include\opencv2\stitching\detail\warpers.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\stitching\include\opencv2\stitching\detail\warpers_inl.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\videostab\include\opencv2\videostab.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\videostab\include\opencv2\videostab\deblurring.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\videostab\include\opencv2\videostab\fast_marching.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\videostab\include\opencv2\videostab\fast_marching_inl.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\videostab\include\opencv2\videostab\frame_source.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\videostab\include\opencv2\videostab\global_motion.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\videostab\include\opencv2\videostab\inpainting.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\videostab\include\opencv2\videostab\log.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\videostab\include\opencv2\videostab\motion_core.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\videostab\include\opencv2\videostab\motion_stabilizing.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\videostab\include\opencv2\videostab\optical_flow.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\videostab\include\opencv2\videostab\outlier_rejection.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\videostab\include\opencv2\videostab\ring_buffer.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\videostab\include\opencv2\videostab\stabilizer.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\videostab\include\opencv2\videostab\wobble_suppression.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\world\include\opencv2\world.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_core.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\arithm_core.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\arithm_simd.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\bufferpool.impl.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\directx.inc.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\gl_core_3_1.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\hal_internal.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\hal_replacement.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\runtime\autogenerated\opencl_clamdblas_impl.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\runtime\autogenerated\opencl_clamdfft_impl.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\runtime\autogenerated\opencl_core_impl.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\runtime\autogenerated\opencl_gl_impl.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\runtime\runtime_common.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\precomp.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\src\precomp.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_imgproc.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\filterengine.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\gcgraph.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\hal_replacement.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\precomp.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\_geom.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\ml\src\kdtree.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\ml\src\precomp.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_photo.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\src\arrays.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\src\contrast_preserve.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\src\fast_nlmeans_denoising_invoker.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\src\fast_nlmeans_denoising_invoker_commons.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\src\fast_nlmeans_denoising_opencl.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\src\fast_nlmeans_multi_denoising_invoker.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\src\hdr_common.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\src\npr.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\src\precomp.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\src\seamless_cloning.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_video.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\video\src\lkpyramid.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\video\src\precomp.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\src\precomp.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\src\utils.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\src\grfmt_base.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\src\grfmt_bmp.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\src\grfmt_exr.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\src\grfmt_gdal.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\src\grfmt_gdcm.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\src\grfmt_hdr.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\src\grfmt_jpeg.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\src\grfmt_jpeg2000.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\src\grfmt_pam.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\src\grfmt_png.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\src\grfmt_pxm.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\src\grfmt_sunras.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\src\grfmt_tiff.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\src\grfmt_webp.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\src\grfmts.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\src\bitstrm.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\src\rgbe.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\src\exif.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\src\emdL1_def.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\src\precomp.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\src\scd_def.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\videoio\src\precomp.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\videoio\src\cap_dshow.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\videoio\src\cap_ffmpeg_impl.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\highgui\src\precomp.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_objdetect.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\src\cascadedetect.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\src\precomp.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_superres.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\superres\src\input_array_utility.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\superres\src\precomp.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\superres\src\ring_buffer.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_features2d.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\src\agast_score.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\src\fast_score.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\src\precomp.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\src\kaze\AKAZEConfig.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\src\kaze\AKAZEFeatures.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\src\kaze\KAZEConfig.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\src\kaze\KAZEFeatures.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\src\kaze\TEvolution.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\src\kaze\fed.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\src\kaze\nldiffusion_functions.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\src\kaze\utils.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_calib3d.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\src\circlesgrid.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\src\fisheye.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\src\precomp.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\src\dls.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\src\epnp.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\src\p3p.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\src\polynom_solver.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\src\rho.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\src\upnp.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_stitching.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\stitching\src\precomp.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\stitching\src\util_log.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\videostab\src\clp.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\videostab\src\precomp.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\world\src\precomp.hpp" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\build\cvconfig.h" />
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\build\opencv2\opencv_modules.hpp" />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\algorithm.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\alloc.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\arithm.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\array.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\command_line_parser.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\conjugate_gradient.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\convert.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\copy.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\cuda_gpu_mat.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\cuda_host_mem.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\cuda_info.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\cuda_stream.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\datastructs.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\directx.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\downhill_simplex.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\dxt.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\gl_core_3_1.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\glob.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\hal_internal.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\kmeans.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\lapack.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\lda.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\lpsolver.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\mathfuncs.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\mathfuncs_core.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\matmul.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\matop.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\matrix.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\matrix_decomp.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\merge.cpp" >
+      <ObjectFileName>$(IntDir)/__/core/src/merge.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\ocl.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\runtime\opencl_clamdblas.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\runtime\opencl_clamdfft.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\runtime\opencl_core.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opengl.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\out.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\ovx.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\parallel.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\parallel_pthreads.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\pca.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\persistence.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\rand.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\split.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\stat.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\stl.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\system.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\tables.cpp" >
+      <ObjectFileName>$(IntDir)/__/core/src/tables.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\types.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\umatrix.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\va_intel.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_core.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\src\flann.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\src\miniflann.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\accum.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\approx.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\blend.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\canny.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\clahe.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\color.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\colormap.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\connectedcomponents.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\contours.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\convhull.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\corner.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\cornersubpix.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\demosaicing.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\deriv.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\distransform.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\drawing.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\emd.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\featureselect.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\filter.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\floodfill.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\gabor.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\generalized_hough.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\geometry.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\grabcut.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\hershey_fonts.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\histogram.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\hough.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\imgwarp.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\intersection.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\linefit.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\lsd.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\main.cpp" >
+      <ObjectFileName>$(IntDir)/__/imgproc/src/main.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\matchcontours.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\min_enclosing_triangle.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\moments.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\morph.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\phasecorr.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\pyramids.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\rotcalipers.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\samplers.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\segmentation.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\shapedescr.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\smooth.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\spatialgradient.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\subdivision2d.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\sumpixels.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\tables.cpp" >
+      <ObjectFileName>$(IntDir)/__/imgproc/src/tables.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\templmatch.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\thresh.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\undistort.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\utils.cpp" >
+      <ObjectFileName>$(IntDir)/__/imgproc/src/utils.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_imgproc.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\ml\src\ann_mlp.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\ml\src\boost.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\ml\src\data.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\ml\src\em.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\ml\src\gbt.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\ml\src\inner_functions.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\ml\src\kdtree.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\ml\src\knearest.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\ml\src\lr.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\ml\src\nbayes.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\ml\src\rtrees.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\ml\src\svm.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\ml\src\svmsgd.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\ml\src\testset.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\ml\src\tree.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\src\align.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\src\calibrate.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\src\contrast_preserve.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\src\denoise_tvl1.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\src\denoising.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\src\denoising.cuda.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\src\hdr_common.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\src\inpaint.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\src\merge.cpp" >
+      <ObjectFileName>$(IntDir)/__/photo/src/merge.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\src\npr.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\src\seamless_cloning.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\src\seamless_cloning_impl.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\src\tonemap.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_photo.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\video\src\bgfg_KNN.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\video\src\bgfg_gaussmix2.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\video\src\camshift.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\video\src\compat_video.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\video\src\ecc.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\video\src\kalman.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\video\src\lkpyramid.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\video\src\optflowgf.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\video\src\tvl1flow.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_video.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\src\loadsave.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\src\utils.cpp" >
+      <ObjectFileName>$(IntDir)/__/imgcodecs/src/utils.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\src\grfmt_base.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\src\grfmt_bmp.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\src\grfmt_exr.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\src\grfmt_gdal.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\src\grfmt_gdcm.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\src\grfmt_hdr.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\src\grfmt_jpeg.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\src\grfmt_jpeg2000.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\src\grfmt_pam.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\src\grfmt_png.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\src\grfmt_pxm.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\src\grfmt_sunras.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\src\grfmt_tiff.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\src\grfmt_webp.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\src\bitstrm.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\src\rgbe.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\src\exif.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\src\aff_trans.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\src\emdL1.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\src\haus_dis.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\src\hist_cost.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\src\precomp.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\src\sc_dis.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\src\tps_trans.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\videoio\src\cap.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\videoio\src\cap_images.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\videoio\src\cap_mjpeg_encoder.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\videoio\src\cap_mjpeg_decoder.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\videoio\src\cap_cmu.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\videoio\src\cap_dshow.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\videoio\src\cap_vfw.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\videoio\src\cap_ffmpeg.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\highgui\src\window.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\highgui\src\window_w32.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\src\cascadedetect.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\src\cascadedetect_convert.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\src\detection_based_tracker.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\src\haar.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\src\hog.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\src\main.cpp" >
+      <ObjectFileName>$(IntDir)/__/objdetect/src/main.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_objdetect.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\superres\src\btv_l1.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\superres\src\btv_l1_cuda.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\superres\src\frame_source.cpp" >
+      <ObjectFileName>$(IntDir)/__/superres/src/frame_source.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\superres\src\input_array_utility.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\superres\src\optical_flow.cpp" >
+      <ObjectFileName>$(IntDir)/__/superres/src/optical_flow.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\superres\src\super_resolution.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_superres.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\src\agast.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\src\agast_score.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\src\akaze.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\src\bagofwords.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\src\blobdetector.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\src\brisk.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\src\draw.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\src\dynamic.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\src\evaluation.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\src\fast.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\src\fast_score.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\src\feature2d.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\src\gftt.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\src\kaze.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\src\kaze\AKAZEFeatures.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\src\kaze\KAZEFeatures.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\src\kaze\fed.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\src\kaze\nldiffusion_functions.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\src\keypoint.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\src\main.cpp" >
+      <ObjectFileName>$(IntDir)/__/features2d/src/main.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\src\matchers.cpp" >
+      <ObjectFileName>$(IntDir)/__/features2d/src/matchers.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\src\mser.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\src\orb.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_features2d.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\src\calibinit.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\src\calibration.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\src\checkchessboard.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\src\circlesgrid.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\src\compat_ptsetreg.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\src\compat_stereo.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\src\dls.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\src\epnp.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\src\fisheye.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\src\five-point.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\src\fundam.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\src\homography_decomp.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\src\levmarq.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\src\main.cpp" >
+      <ObjectFileName>$(IntDir)/__/calib3d/src/main.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\src\p3p.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\src\polynom_solver.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\src\posit.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\src\ptsetreg.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\src\quadsubpix.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\src\rho.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\src\solvepnp.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\src\stereobm.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\src\stereosgbm.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\src\triangulate.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\src\upnp.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_calib3d.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\stitching\src\autocalib.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\stitching\src\blenders.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\stitching\src\camera.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\stitching\src\exposure_compensate.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\stitching\src\matchers.cpp" >
+      <ObjectFileName>$(IntDir)/__/stitching/src/matchers.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\stitching\src\motion_estimators.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\stitching\src\seam_finders.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\stitching\src\stitcher.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\stitching\src\timelapsers.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\stitching\src\util.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\stitching\src\warpers.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\stitching\src\warpers_cuda.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\build\modules\world\opencl_kernels_stitching.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\videostab\src\deblurring.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\videostab\src\fast_marching.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\videostab\src\frame_source.cpp" >
+      <ObjectFileName>$(IntDir)/__/videostab/src/frame_source.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\videostab\src\global_motion.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\videostab\src\inpainting.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\videostab\src\log.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\videostab\src\motion_stabilizing.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\videostab\src\optical_flow.cpp" >
+      <ObjectFileName>$(IntDir)/__/videostab/src/optical_flow.cpp.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\videostab\src\outlier_rejection.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\videostab\src\stabilizer.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\videostab\src\wobble_suppression.cpp"  />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\world\src\world_init.cpp"  />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\build\modules\world\version_string.inc" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\arithm.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\convert.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\copymakeborder.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\copyset.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\cvtclr_dx.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\fft.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\flip.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\gemm.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\inrange.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\lut.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\meanstddev.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\minmaxloc.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\mixchannels.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\mulspectrums.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\normalize.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\reduce.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\reduce2.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\repeat.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\set_identity.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\split_merge.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\src\opencl\transpose.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\accumulate.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\bilateral.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\blend_linear.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\boxFilter.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\boxFilter3x3.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\calc_back_project.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\canny.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\clahe.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\corner.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\covardata.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\cvtcolor.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\filter2D.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\filter2DSmall.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\filterSepCol.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\filterSepRow.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\filterSep_singlePass.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\filterSmall.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\gaussianBlur3x3.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\gaussianBlur5x5.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\gftt.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\histogram.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\hough_lines.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\integral_sum.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\laplacian3.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\laplacian5.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\linearPolar.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\logPolar.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\match_template.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\medianFilter.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\moments.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\morph.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\morph3x3.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\precornerdetect.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\pyr_down.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\pyr_up.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\pyramid_up.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\remap.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\resize.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\sepFilter3x3.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\threshold.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\warp_affine.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\warp_perspective.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\src\opencl\warp_transform.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\photo\src\opencl\nlmeans.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\video\src\opencl\bgfg_mog2.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\video\src\opencl\optical_flow_farneback.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\video\src\opencl\optical_flow_tvl1.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\video\src\opencl\pyrlk.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\src\opencl\cascadedetect.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\src\opencl\objdetect_hog.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\superres\src\opencl\superres_btvl1.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\src\opencl\brute_force_match.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\src\opencl\fast.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\src\opencl\orb.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\calib3d\src\opencl\stereobm.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\stitching\src\opencl\multibandblend.cl" />
+    <None Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\stitching\src\opencl\warpers.cl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/ZERO_CHECK.vcxproj">
+      <Project>9723EDC2-C47D-3A79-B4B7-97DCD40CCCEC</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/3rdparty/openexr/IlmImf.vcxproj">
+      <Project>C5F65977-B610-32DC-A2FF-6BBBA88056AB</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/3rdparty/libjasper/libjasper.vcxproj">
+      <Project>85FDFC71-3B5E-3637-B07E-330EF52D5E40</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/3rdparty/libjpeg/libjpeg.vcxproj">
+      <Project>FDEDFADF-98F7-3C7F-8F7C-B6520D06BD16</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/3rdparty/libpng/libpng.vcxproj">
+      <Project>2BCACFAB-564E-3C67-B73A-6CBF453F7CA0</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/3rdparty/libtiff/libtiff.vcxproj">
+      <Project>8CF4C6F9-AFC3-3421-8AE9-9437DCC7C155</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/3rdparty/libwebp/libwebp.vcxproj">
+      <Project>28533F47-8388-32DA-8AC6-E511478BC395</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/3rdparty/zlib/zlib.vcxproj">
+      <Project>82650339-E50B-3B52-B1EF-D9F7EA1D8A23</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

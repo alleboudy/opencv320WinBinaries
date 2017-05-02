@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{14654466-C348-34FE-A4C9-A83C96BABA88}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>opencv_test_objdetect</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\aalleboudy\Downloads\opencv\build\bin\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">opencv_test_objdetect.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">opencv_test_objdetectd</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\aalleboudy\Downloads\opencv\build\bin\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">opencv_test_objdetect.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">opencv_test_objdetect</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Users\aalleboudy\Downloads\opencv\build\3rdparty\ippicv\ippicv_win\include;C:\Users\aalleboudy\Downloads\opencv\build;C:\Users\aalleboudy\Downloads\opencv\sources\modules\ts\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\videoio\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\ml\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\highgui\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4251;4324;4275;4589</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ProcessorNumber>4</ProcessorNumber>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_DEBUG;_VARIADIC_MAX=10;__OPENCV_BUILD=1;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;_DEBUG;_VARIADIC_MAX=10;__OPENCV_BUILD=1;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\aalleboudy\Downloads\opencv\build\3rdparty\ippicv\ippicv_win\include;C:\Users\aalleboudy\Downloads\opencv\build;C:\Users\aalleboudy\Downloads\opencv\sources\modules\ts\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\videoio\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\ml\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\highgui\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\aalleboudy\Downloads\opencv\build\3rdparty\ippicv\ippicv_win\include;C:\Users\aalleboudy\Downloads\opencv\build;C:\Users\aalleboudy\Downloads\opencv\sources\modules\ts\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\videoio\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\ml\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\highgui\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\Debug\opencv_ts320d.lib;..\..\lib\Debug\opencv_objdetect320d.lib;..\..\lib\Debug\opencv_ml320d.lib;..\..\lib\Debug\opencv_highgui320d.lib;..\..\3rdparty\ippicv\ippicv_win\lib\ia32\ippicvmt.lib;..\..\lib\Debug\opencv_videoio320d.lib;..\..\lib\Debug\opencv_imgcodecs320d.lib;..\..\lib\Debug\opencv_imgproc320d.lib;..\..\lib\Debug\opencv_core320d.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/aalleboudy/Downloads/opencv/build/bin/Debug/opencv_test_objdetectd.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/aalleboudy/Downloads/opencv/build/bin/Debug/opencv_test_objdetectd.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /bigobj %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Users\aalleboudy\Downloads\opencv\build\3rdparty\ippicv\ippicv_win\include;C:\Users\aalleboudy\Downloads\opencv\build;C:\Users\aalleboudy\Downloads\opencv\sources\modules\ts\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\videoio\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\ml\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\highgui\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4127;4251;4324;4275;4589</DisableSpecificWarnings>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <ProcessorNumber>4</ProcessorNumber>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;_VARIADIC_MAX=10;__OPENCV_BUILD=1;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;NDEBUG;_VARIADIC_MAX=10;__OPENCV_BUILD=1;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\aalleboudy\Downloads\opencv\build\3rdparty\ippicv\ippicv_win\include;C:\Users\aalleboudy\Downloads\opencv\build;C:\Users\aalleboudy\Downloads\opencv\sources\modules\ts\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\videoio\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\ml\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\highgui\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\aalleboudy\Downloads\opencv\build\3rdparty\ippicv\ippicv_win\include;C:\Users\aalleboudy\Downloads\opencv\build;C:\Users\aalleboudy\Downloads\opencv\sources\modules\ts\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\videoio\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\core\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgproc\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\ml\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\highgui\include;C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\Release\opencv_ts320.lib;..\..\lib\Release\opencv_objdetect320.lib;..\..\lib\Release\opencv_ml320.lib;..\..\lib\Release\opencv_highgui320.lib;..\..\3rdparty\ippicv\ippicv_win\lib\ia32\ippicvmt.lib;..\..\lib\Release\opencv_videoio320.lib;..\..\lib\Release\opencv_imgcodecs320.lib;..\..\lib\Release\opencv_imgproc320.lib;..\..\lib\Release\opencv_core320.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/aalleboudy/Downloads/opencv/build/bin/Release/opencv_test_objdetect.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/aalleboudy/Downloads/opencv/build/bin/Release/opencv_test_objdetect.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/aalleboudy/Downloads/opencv/sources/modules/objdetect/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/aalleboudy/Downloads/opencv/sources -BC:/Users/aalleboudy/Downloads/opencv/build --check-stamp-file C:\Users\aalleboudy\Downloads\opencv\build\modules\objdetect\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/aalleboudy/Downloads/opencv/sources/modules/objdetect/CMakeLists.txt;C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\CMakeLists.txt;C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\aalleboudy\Downloads\opencv\build\modules\objdetect\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/aalleboudy/Downloads/opencv/sources/modules/objdetect/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/aalleboudy/Downloads/opencv/sources -BC:/Users/aalleboudy/Downloads/opencv/build --check-stamp-file C:\Users\aalleboudy\Downloads\opencv\build\modules\objdetect\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/aalleboudy/Downloads/opencv/sources/modules/objdetect/CMakeLists.txt;C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\CMakeLists.txt;C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\aalleboudy\Downloads\opencv\build\modules\objdetect\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\test\test_precomp.hpp" />
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\test\opencl\test_hogdetector.cpp" >
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/aalleboudy/Downloads/opencv/sources/modules/objdetect/test/test_precomp.hpp</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/aalleboudy/Downloads/opencv/sources/modules/objdetect/test/test_precomp.hpp</PrecompiledHeaderFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/aalleboudy/Downloads/opencv/sources/modules/objdetect/test/test_precomp.hpp</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/aalleboudy/Downloads/opencv/sources/modules/objdetect/test/test_precomp.hpp</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\test\test_cascadeandhog.cpp" >
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/aalleboudy/Downloads/opencv/sources/modules/objdetect/test/test_precomp.hpp</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/aalleboudy/Downloads/opencv/sources/modules/objdetect/test/test_precomp.hpp</PrecompiledHeaderFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/aalleboudy/Downloads/opencv/sources/modules/objdetect/test/test_precomp.hpp</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/aalleboudy/Downloads/opencv/sources/modules/objdetect/test/test_precomp.hpp</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\objdetect\test\test_main.cpp" >
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/aalleboudy/Downloads/opencv/sources/modules/objdetect/test/test_precomp.hpp</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/aalleboudy/Downloads/opencv/sources/modules/objdetect/test/test_precomp.hpp</PrecompiledHeaderFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/aalleboudy/Downloads/opencv/sources/modules/objdetect/test/test_precomp.hpp</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/aalleboudy/Downloads/opencv/sources/modules/objdetect/test/test_precomp.hpp</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\build\modules\objdetect\opencv_test_objdetect_pch.cpp" >
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/aalleboudy/Downloads/opencv/sources/modules/objdetect/test/test_precomp.hpp</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/aalleboudy/Downloads/opencv/sources/modules/objdetect/test/test_precomp.hpp</PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/ZERO_CHECK.vcxproj">
+      <Project>9723EDC2-C47D-3A79-B4B7-97DCD40CCCEC</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/core/opencv_core.vcxproj">
+      <Project>B11B6F37-C1B5-3BB0-8ADB-B589543D102B</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/highgui/opencv_highgui.vcxproj">
+      <Project>7B5CA51F-6F23-3425-899D-F8CE272A38A7</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/imgcodecs/opencv_imgcodecs.vcxproj">
+      <Project>760C9718-557A-3A42-A24B-ECBF7EDC2EE0</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/imgproc/opencv_imgproc.vcxproj">
+      <Project>757AE486-FD93-3DA5-B476-8569AEA9A965</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/ml/opencv_ml.vcxproj">
+      <Project>06E854C7-D45D-36A7-9C49-AF945B600384</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/objdetect/opencv_objdetect.vcxproj">
+      <Project>9D6F45B7-E7FE-3F64-8F69-4759E745A648</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/ts/opencv_ts.vcxproj">
+      <Project>C032F681-5AD6-35F0-9A5B-857719577048</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/aalleboudy/Downloads/opencv/build/modules/videoio/opencv_videoio.vcxproj">
+      <Project>B1A6BF83-CE42-3D63-8269-517719F65AAF</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

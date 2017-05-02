@@ -1,0 +1,18 @@
+# CMake generation dependency list for this directory.
+C:/Users/aalleboudy/Downloads/opencv/sources/modules/world/CMakeLists.txt
+C:/Users/aalleboudy/Downloads/opencv/sources/modules/core/CMakeLists.txt
+C:/Users/aalleboudy/Downloads/opencv/sources/modules/flann/CMakeLists.txt
+C:/Users/aalleboudy/Downloads/opencv/sources/modules/imgproc/CMakeLists.txt
+C:/Users/aalleboudy/Downloads/opencv/sources/modules/ml/CMakeLists.txt
+C:/Users/aalleboudy/Downloads/opencv/sources/modules/photo/CMakeLists.txt
+C:/Users/aalleboudy/Downloads/opencv/sources/modules/video/CMakeLists.txt
+C:/Users/aalleboudy/Downloads/opencv/sources/modules/imgcodecs/CMakeLists.txt
+C:/Users/aalleboudy/Downloads/opencv/sources/modules/shape/CMakeLists.txt
+C:/Users/aalleboudy/Downloads/opencv/sources/modules/videoio/CMakeLists.txt
+C:/Users/aalleboudy/Downloads/opencv/sources/modules/highgui/CMakeLists.txt
+C:/Users/aalleboudy/Downloads/opencv/sources/modules/objdetect/CMakeLists.txt
+C:/Users/aalleboudy/Downloads/opencv/sources/modules/superres/CMakeLists.txt
+C:/Users/aalleboudy/Downloads/opencv/sources/modules/features2d/CMakeLists.txt
+C:/Users/aalleboudy/Downloads/opencv/sources/modules/calib3d/CMakeLists.txt
+C:/Users/aalleboudy/Downloads/opencv/sources/modules/stitching/CMakeLists.txt
+C:/Users/aalleboudy/Downloads/opencv/sources/modules/videostab/CMakeLists.txt

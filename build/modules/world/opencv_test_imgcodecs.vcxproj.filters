@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\test\test_grfmt.cpp">
+      <Filter>opencv_imgcodecs\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\test\test_main.cpp">
+      <Filter>opencv_imgcodecs\Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\imgcodecs\test\test_precomp.hpp">
+      <Filter>opencv_imgcodecs\Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\world\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="opencv_imgcodecs\Src">
+      <UniqueIdentifier>{F53D1F39-523D-3BE1-ACA5-CC5E46F567D2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_imgcodecs\Include">
+      <UniqueIdentifier>{7EEBE7A1-AB7D-3553-83B4-B24B1AF9BF41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_imgcodecs">
+      <UniqueIdentifier>{242B6967-B2B2-349A-A4CD-B950643303A7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

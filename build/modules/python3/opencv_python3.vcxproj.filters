@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\python\src2\cv2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\build\modules\python3\pyopencv_generated_include.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\build\modules\python3\pyopencv_generated_funcs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\build\modules\python3\pyopencv_generated_types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\build\modules\python3\pyopencv_generated_type_reg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\build\modules\python3\pyopencv_generated_ns_reg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\flann\misc\python\pyopencv_flann.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\ml\misc\python\pyopencv_ml.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\features2d\misc\python\pyopencv_features2d.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\stitching\misc\python\pyopencv_stitching.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\build\modules\python3\pyopencv_custom_headers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\python\python3\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\aalleboudy\Downloads\opencv\build\CMakeFiles\88d36f55a6c6fd9d774d7bea7f3d8568\pyopencv_generated_include.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{1435CC6E-EED7-3F60-8A6F-FD6E27FF4EC7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{B097267C-9D36-3A2E-9F23-A829A153FC82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{01C0F766-02CE-3B15-A555-288D5A80157A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\superres\test\test_main.cpp">
+      <Filter>opencv_superres\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\superres\test\test_superres.cpp">
+      <Filter>opencv_superres\Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\superres\test\test_precomp.hpp">
+      <Filter>opencv_superres\Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\world\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="opencv_superres">
+      <UniqueIdentifier>{06E848C7-67A6-3A6F-883D-0AB39B593DA6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_superres\Src">
+      <UniqueIdentifier>{3B392477-B3E4-3B66-8A09-C35359F46146}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_superres\Include">
+      <UniqueIdentifier>{AD841C90-E113-3139-B84D-30BEC6F24B72}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

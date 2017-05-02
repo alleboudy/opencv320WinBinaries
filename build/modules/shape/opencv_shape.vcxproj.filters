@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\src\aff_trans.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\src\emdL1.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\src\haus_dis.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\src\hist_cost.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\src\precomp.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\src\sc_dis.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\src\tps_trans.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\build\modules\shape\opencv_shape_pch.cpp">
+      <Filter>Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\include\opencv2\shape.hpp">
+      <Filter>Include\opencv2</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\include\opencv2\shape\emdL1.hpp">
+      <Filter>Include\opencv2\shape</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\include\opencv2\shape\hist_cost.hpp">
+      <Filter>Include\opencv2\shape</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\include\opencv2\shape\shape.hpp">
+      <Filter>Include\opencv2\shape</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\include\opencv2\shape\shape_distance.hpp">
+      <Filter>Include\opencv2\shape</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\include\opencv2\shape\shape_transformer.hpp">
+      <Filter>Include\opencv2\shape</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\src\emdL1_def.hpp">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\src\precomp.hpp">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\src\scd_def.hpp">
+      <Filter>Src</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\build\cvconfig.h">
+      <Filter>Include</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\build\opencv2\opencv_modules.hpp">
+      <Filter>Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Include\opencv2\shape">
+      <UniqueIdentifier>{54EBBD2E-8A22-30B7-A2B8-3942405638B8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include\opencv2">
+      <UniqueIdentifier>{0283A766-43F4-3318-BE65-D7E9064F8C38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Src">
+      <UniqueIdentifier>{F5E0F450-9CD1-3DA4-8023-488B758B948D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Include">
+      <UniqueIdentifier>{A2B25928-B1CC-3ABC-80CC-57765B274343}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

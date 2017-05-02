@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\test\test_main.cpp">
+      <Filter>opencv_shape\Src</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\test\test_shape.cpp">
+      <Filter>opencv_shape\Src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\shape\test\test_precomp.hpp">
+      <Filter>opencv_shape\Include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\aalleboudy\Downloads\opencv\sources\modules\world\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="opencv_shape\Src">
+      <UniqueIdentifier>{1C58B477-BB1F-327C-B477-7D7166CD7750}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_shape\Include">
+      <UniqueIdentifier>{40621DBB-D952-3A71-9FED-FFB4863353F5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="opencv_shape">
+      <UniqueIdentifier>{A5507E33-F97E-3C6D-8035-A1815B3735A0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
